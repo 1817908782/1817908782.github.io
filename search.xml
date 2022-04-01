@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>XML</title>
+      <link href="/2022/04/01/xml/"/>
+      <url>/2022/04/01/xml/</url>
+      
+        <content type="html"><![CDATA[<p>##XML简介</p><ul><li>XML 被设计用来传输和存储数据</li><li>HTML 被设计用来显示数据<h2 id="什么是XML？"><a href="#什么是XML？" class="headerlink" title="什么是XML？"></a>什么是XML？</h2></li><li>XML 指可扩展标记语言（EXtensible Markup Language）。</li><li>XML 是一种很像HTML的标记语言。</li><li>XML 的设计宗旨是传输数据，而不是显示数据。</li><li>XML 标签没有被预定义。您需要自行定义标签。</li><li>XML 被设计为具有自我描述性。</li><li>XML 是 W3C 的推荐标准。<h2 id="XML不是对HTML的替代"><a href="#XML不是对HTML的替代" class="headerlink" title="XML不是对HTML的替代"></a>XML不是对HTML的替代</h2></li><li>XML是对HTML的补充</li><li>XML 不会替代 HTML，理解这一点很重要在大多数Web 应用程序中，XML用于传输数据，而HTML用于格式化并显示数据。</li><li>对XML最好的描述是：XML是独立于软件和硬件的信息传输工具。</li></ul><h2 id="XML用途"><a href="#XML用途" class="headerlink" title="XML用途"></a>XML用途</h2><ul><li>XML 应用于 Web 开发的许多方面，常用于简化数据的存储和共享。<h2 id="XML把数据从HTML分离"><a href="#XML把数据从HTML分离" class="headerlink" title="XML把数据从HTML分离"></a>XML把数据从HTML分离</h2></li><li>如果您需要在 HTML 文档中显示动态数据，那么每当数据改变时将花费大量的时间来编辑 HTML。<br>通过 XML，数据能够存储在独立的 XML 文件中。这样您就可以专注于使用 HTML/CSS 进行显示和布局，并确保修改底层数据不再需要对 HTML 进行任何的改变。<br>通过使用几行 JavaScript 代码，您就可以读取一个外部 XML 文件，并更新您的网页的数据内容。</li></ul><h2 id="XML简化数据共享"><a href="#XML简化数据共享" class="headerlink" title="XML简化数据共享"></a>XML简化数据共享</h2><ul><li>在真实的世界中，计算机系统和数据使用不兼容的格式来存储数据。<br>  XML 数据以纯文本格式进行存储，因此提供了一种独立于软件和硬件的数据存储方法。<br>  这让创建不同应用程序可以共享的数据变得更加容易。</li></ul><h2 id="XML语法规则"><a href="#XML语法规则" class="headerlink" title="XML语法规则"></a>XML语法规则</h2><ul><li>XML的语法规则很简单且很有逻辑这些规则很容易学习也很容易使用。</li><li>所有的XML元素都必须有一个关闭标签</li><li>XML标签对大小写敏感</li><li>XML必须正确嵌套</li><li>XML属性值必须加引号<br><img src="/2022/04/01/xml/xml.png%22"></li></ul><h2 id="XML文档必须有根元素"><a href="#XML文档必须有根元素" class="headerlink" title="XML文档必须有根元素"></a>XML文档必须有根元素</h2><ul><li>XML 必须包含根元素它是所有其他元素的父元素比如以下实例中root就是根元素：<pre class="line-numbers language-none"><code class="language-none">&lt;root&gt;  &lt;child&gt;    &lt;subchild&gt;.....&lt;/subchild&gt;  &lt;/child&gt;&lt;/root&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></li></ul><h2 id="XML声明"><a href="#XML声明" class="headerlink" title="XML声明"></a>XML声明</h2><ul><li>XML 声明文件的可选部分，如果存在需要放在文档的第一行，如下所示：<pre class="line-numbers language-none"><code class="language-none">&lt;?xml version="1.0" encoding="utf-8"?&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li></ul>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> XML </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>单词总汇</title>
+      <link href="/2022/03/30/dan-ci-zong-hui/"/>
+      <url>/2022/03/30/dan-ci-zong-hui/</url>
+      
+        <content type="html"><![CDATA[<p>#单词总汇</p><h2 id="第一章：初始Mybatis框架"><a href="#第一章：初始Mybatis框架" class="headerlink" title="第一章：初始Mybatis框架"></a>第一章：初始Mybatis框架</h2><ul><li>1):  plain[无装饰的]</li><li>2):  relational[相关的]</li><li>3):  namespace[命名空间]</li><li>4):  configuration[布局]</li><li>5):  mapper[映射]</li><li>6):  builder[建立者]</li><li>7):  environment[生态环境]</li><li>8):  alias[别名]</li></ul><h2 id="第二章：SQL映射文件详解"><a href="#第二章：SQL映射文件详解" class="headerlink" title="第二章：SQL映射文件详解"></a>第二章：SQL映射文件详解</h2><ul><li>1):  association[关联]</li><li>2):  collection[收集]</li><li>3):  behavior[行为]</li><li>4):  partial[部分]</li><li>5):  eviction[收回]</li><li>6):  FIFO[先入先出]</li><li>7):  interval[无装饰的]</li></ul><h2 id="第三章：Mybatis框架动态SQL"><a href="#第三章：Mybatis框架动态SQL" class="headerlink" title="第三章：Mybatis框架动态SQL"></a>第三章：Mybatis框架动态SQL</h2><ul><li>1):  trim[修剪]</li><li>2):  suffix[后缀]</li><li>3):  prefixOverrides[前缀重写]</li><li>4):  suffixOverrides[后缀重写]</li><li>5):  foreach[循环]</li><li>6):  separator[分离器]</li></ul><h2 id="第一章：反射"><a href="#第一章：反射" class="headerlink" title="第一章：反射"></a>第一章：反射</h2><ul><li>1): reflection  [反射]</li><li>2): constructor  [构造函数]</li><li>3): field  [领域]</li><li>4): method  [方法]</li><li>5): simple  [结构单一]</li><li>6): modifier [修正]</li><li>7): declared  [公开声明]</li><li>8): declaring [说明]</li><li>9): member [成员]</li><li>10): instance [例子]</li><li>11): accessible [可达到的]</li><li>12): illegal  [非法的]</li><li>13): access [入口]</li><li>14): invoke [调用]</li><li>15): array [一系列]</li><li>16): component [构成的]</li><li>17): dimension [大小]</li><li>18): convertor [转化器]</li></ul><h2 id="第二章：XML"><a href="#第二章：XML" class="headerlink" title="第二章：XML"></a>第二章：XML</h2><ul><li>1): extensible [可展开的]</li><li>2): markup  [利润]</li><li>3): document [文档]</li><li>4): processing [处理]</li><li>5): parser  [解析器]</li><li>6): builder [建设者]</li><li>7): node  [节点]</li><li>8): element [元素]</li><li>9): attribute  [属性]</li><li>10): transformer  [变压器]</li><li>11): branch [分支]</li></ul>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 单词 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Mybatis</title>
+      <link href="/2022/03/29/mybatis/"/>
+      <url>/2022/03/29/mybatis/</url>
+      
+        <content type="html"><![CDATA[<h1 id="什么是Mybatis"><a href="#什么是Mybatis" class="headerlink" title="什么是Mybatis"></a>什么是Mybatis</h1><ul><li>ORM (Object-Relationship-Mapper):是对象关系映射的意思,它是一种思想，是指将数据库的每一行数据用对象的形式展现出来.</li><li>JPA (Java-Persistence-API):是java持久化的意思，它是JavaEE关于ORM思想的一套标准接口，仅仅是一套接口，不是具体的实现。    </li><li>MyBatis 是一个实现了JPA规范的用来连接数据库并对其进行CRUD操作的开源框框<br>(就和传统的JDBC一样，就是个连接数据库的东西)，其实，它底层就是一个JDBC的封装的组件。MyBatis<br>前身是Ibatis,Ibatis创建于2002年最初为Apache下面的一个开源的项目，2010迁移到<br>google code下面并改名为MyBatis。Mybatis虽然实现了JPA但是它并不是一个完完全全的<br>ORM组件，而是一个基于SQL开发的半ORM组件。</li></ul><h2 id="MyBatis的优点和缺点"><a href="#MyBatis的优点和缺点" class="headerlink" title="MyBatis的优点和缺点"></a>MyBatis的优点和缺点</h2><h3 id="MyBatis的优点："><a href="#MyBatis的优点：" class="headerlink" title="MyBatis的优点："></a>MyBatis的优点：</h3><ul><li>1.与JDBC相比，减少了50%以上的代码量。</li><li>2.MyBatis是最简单的持久化框架，小巧并且简单易学。</li><li>3.MyBatis灵活，不会对应用程序或者数据库的现有设计强加任何影响，SQL可以写在XML里（还可以以注解方式写到Java代码中），从程序代码中彻底分离，降低耦合度，便于统一管理和优化，可重用。</li><li>4.提供XML标签，支持编写动态SQL语句（XML中使用 if, else 等）。</li><li>5.提供映射标签，支持对象与数据库的ORM字段关系映射（可以在XML中配置映射关系，也可以使用注解配置映射关系）。<h3 id="MyBatis的缺点："><a href="#MyBatis的缺点：" class="headerlink" title="MyBatis的缺点："></a>MyBatis的缺点：</h3></li><li>1.SQL语句的编写工作量较大，尤其是字段多、关联表多时，更是如此，对开发人员编写SQL语句的功底有一定要求。</li><li>2.SQL语句依赖于数据库，导致数据库移植性差，不能随意更换数据库。</li><li>3.与JDBC相比，增加了调试代码和查错的难度（使用了ORM需要额外花费时间学习ORM的框架，调试错误比JDBC难很多）。封装程度越高，查错越难。</li><li>4.JDBC可以单步调试，MyBatis不能单步调试。</li></ul><h2 id="MyBatis动态sql是做什么的？"><a href="#MyBatis动态sql是做什么的？" class="headerlink" title="MyBatis动态sql是做什么的？"></a>MyBatis动态sql是做什么的？</h2><ul><li>1.MyBatis动态sql可以让我们在XML映射文件内，以标签的形式编写动态sql，完成逻辑判断和动态拼接sql的功能。</li><li>2.MyBatis提供了9种动态sql标签：trim|where|set|foreach|if|choose|when|otherwise|bind.</li><li>3.其执行原理为，使用OGNL从sql参数对象种计算表达式的值，根据表达式的值动态拼接sql，来完成动态sql的功能。<br><img src="/2022/03/29/mybatis/mybais1.png"><h2 id="MyBatis的配置文件"><a href="#MyBatis的配置文件" class="headerlink" title="MyBatis的配置文件"></a>MyBatis的配置文件</h2><pre class="line-numbers language-none"><code class="language-none">&lt;!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"        "http://mybatis.org/dtd/mybatis-3-config.dtd"&gt;&lt;configuration&gt;&lt;!--    引入包含数据库连接参数的database.properties文件--&gt;    &lt;properties resource="database.properties"&gt;&lt;/properties&gt;&lt;!--    1.设置MyBatis框架的运行时行为--&gt;    &lt;settings&gt;&lt;!--        使用Log4j作为MyBatis框架的日志实现--&gt;        &lt;setting name="logImpl" value="LOG4J"/&gt;&lt;!--        设置自动映射行为--&gt;        &lt;setting name="autoMappingBehavior" value="FULL"/&gt;&lt;!--        禁用自动映射--&gt;&lt;!--        &lt;setting name="autoMappingBehavior" value="NONE"/&gt;--&gt;    &lt;/settings&gt;&lt;!--    为实体类配置别名--&gt;    &lt;typeAliases&gt;        &lt;package name="cn.cvs.popj"/&gt;&lt;!--        &lt;typeAlias alias="sysuer" type="cn.cvs.popj.SysUser"&gt;&lt;/typeAlias&gt;--&gt;&lt;!--        &lt;typeAlias alias="supplier" type="cn.cvs.popj.SysUser"&gt;&lt;/typeAlias&gt;--&gt;    &lt;/typeAliases&gt;&lt;!--    2.配置MyBatis框架的运行环境--&gt;    &lt;environments default="development"&gt;        &lt;environment id="development"&gt;&lt;!--            配置事务管理器,采用JDBC事务,由应用自行管理事务--&gt;            &lt;transactionManager type="JDBC"&gt;&lt;/transactionManager&gt;&lt;!--            配置数据源,POOLED:MyBatis提供的数据源,JNDI:JNDI数据源--&gt;            &lt;dataSource type="POOLED"&gt;                &lt;!--            使用${}引用定义的参数,此处参数来源于database.properties文件--&gt;                &lt;property name="driver" value="${jdbc.driver}"/&gt;                &lt;property name="url" value="${jdbc.url}"/&gt;                &lt;property name="username" value="${jdbc.username}"/&gt;                &lt;property name="password" value="${jdbc.password}"/&gt;            &lt;/dataSource&gt;        &lt;/environment&gt;    &lt;/environments&gt;&lt;!--    3.配置需要引用的SQL映射文件的位置--&gt;    &lt;mappers&gt;        &lt;package name="cn/cvs/dao/sysUser"/&gt;&lt;!--        &lt;mapper resource="cn/cvs/dao/sysUser/SysUserMapper.xml"&gt;&lt;/mapper&gt;--&gt;    &lt;/mappers&gt;&lt;/configuration&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li></ul>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> mybatis </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>反射</title>
+      <link href="/2022/03/29/fan-she/"/>
+      <url>/2022/03/29/fan-she/</url>
+      
+        <content type="html"><![CDATA[<h2 id="什么是java反射"><a href="#什么是java反射" class="headerlink" title="什么是java反射"></a>什么是java反射</h2><ul><li>反射机制是在运行时，对于任意一个类，都能够知道这个类的所有属性和方法；对于任意一个对象，<br>都能调用它的任意一个方法，在java中，只要给定类的名字，就可以通过反射机制来获取类的所以信息<br>。这种动态获取的信息以及动态调用的方法的功能称为java语言的反射机制。<br>从而使Java具有动态语言的特性，增强了程序的灵活性和可移植性</li></ul><h2 id="反射机制的作用"><a href="#反射机制的作用" class="headerlink" title="反射机制的作用"></a>反射机制的作用</h2><ul><li>在运行时判断任意一个对象所属的类型。</li><li>在运行时构造任意一个类的对象。</li><li>在运行时判断任意一个类所具有的成员变量和方法。</li><li>在运行时调用任意一个对象的方法，甚至可以调用private方法。</li></ul><h2 id="Java反射机制API"><a href="#Java反射机制API" class="headerlink" title="Java反射机制API"></a>Java反射机制API</h2><ul><li>Class类：代表一个类。</li><li>Filed类：代表类的成员变量。</li><li>Method类：代表类的方法。</li><li>Constructor类：代表类的构造方法。</li><li>Array类：提供了动态创建数组及访问数组元素的静态方法。该类中的所有方法都是静态的。</li></ul><h2 id="反射可访问的常用信息"><a href="#反射可访问的常用信息" class="headerlink" title="反射可访问的常用信息"></a>反射可访问的常用信息</h2><p><img src="/2022/03/29/fan-she/fanshe.PNG" alt="反射可访问的常用信息"></p><h2 id="反射机制的优点"><a href="#反射机制的优点" class="headerlink" title="反射机制的优点"></a>反射机制的优点</h2><ul><li>首先，反射机制极大的提高了程序的灵活性和扩展性，降低模块的耦合性，提高自身的适应能力。<br>其次，通过反射机制可以让程序创建和控制任何类的对象，无需提前硬编码目标类。<br>再次，使用反射机制能够在运行时构造一个类的对象、判断一个类所具有的成员变量和方法、调用一个对象的方法。<br>最后，反射机制是构建框架技术的基础所在，使用反射可以避免将代码写死在框架中。<br>java的反射机制就是增加程序的灵活性，避免将程序写死到代码里。<br>例如： 实例化一个 person()对象， 不使用反射， new person(); 如果想变成 实例化 其他类， 那么必须修改源代码，并重新编译。<pre class="line-numbers language-none"><code class="language-none">使用反射： class.forName("com.xxx.Person").newInstance()； 而且这个类描述可以写到配置文件中，如 **.xml, 这样如果想实例化其他类，只要修改配置文件的"类描述"就可以了，不需要重新修改代码并编译。<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li></ul><h2 id="反射机制的缺点"><a href="#反射机制的缺点" class="headerlink" title="反射机制的缺点"></a>反射机制的缺点</h2><h3 id="尽管反射机制带来了极大的灵活性及方便性，但反射也有缺点。反射机制的功能非常强大，但不能滥用。在能不使用反射完成时，尽量不要使用，原因有以下几点："><a href="#尽管反射机制带来了极大的灵活性及方便性，但反射也有缺点。反射机制的功能非常强大，但不能滥用。在能不使用反射完成时，尽量不要使用，原因有以下几点：" class="headerlink" title="尽管反射机制带来了极大的灵活性及方便性，但反射也有缺点。反射机制的功能非常强大，但不能滥用。在能不使用反射完成时，尽量不要使用，原因有以下几点："></a>尽管反射机制带来了极大的灵活性及方便性，但反射也有缺点。反射机制的功能非常强大，但不能滥用。在能不使用反射完成时，尽量不要使用，原因有以下几点：</h3><ul><li>1、性能问题。<br>Java反射机制中包含了一些动态类型，所以Java虚拟机不能够对这些动态代码进行优化。因此，反射操作的效率要比正常操作效率低很多。我们应该避免在对性能要求很高的程序或经常被执行的代码中使用反射。而且，如何使用反射决定了性能的高低。如果它作为程序中较少运行的部分，性能将不会成为一个问题。</li><li>2、安全限制。<br>使用反射通常需要程序的运行没有安全方面的限制。如果一个程序对安全性提出要求，则最好不要使用反射。</li><li>3、程序健壮性。<br>反射允许代码执行一些通常不被允许的操作，所以使用反射有可能会导致意想不到的后果。反射代码破坏了Java程序结构的抽象性，所以当程序运行的平台发生变化的时候，由于抽象的逻辑结构不能被识别，代码产生的效果与之前会产生差异。</li></ul>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 反射 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
