@@ -23,25 +23,6 @@
     
     
     <entry>
-      <title>单词总汇</title>
-      <link href="/2022/03/30/dan-ci-zong-hui/"/>
-      <url>/2022/03/30/dan-ci-zong-hui/</url>
-      
-        <content type="html"><![CDATA[<p>#单词总汇</p><h2 id="第一章：初始Mybatis框架"><a href="#第一章：初始Mybatis框架" class="headerlink" title="第一章：初始Mybatis框架"></a>第一章：初始Mybatis框架</h2><ul><li>1):  plain[无装饰的]</li><li>2):  relational[相关的]</li><li>3):  namespace[命名空间]</li><li>4):  configuration[布局]</li><li>5):  mapper[映射]</li><li>6):  builder[建立者]</li><li>7):  environment[生态环境]</li><li>8):  alias[别名]</li></ul><h2 id="第二章：SQL映射文件详解"><a href="#第二章：SQL映射文件详解" class="headerlink" title="第二章：SQL映射文件详解"></a>第二章：SQL映射文件详解</h2><ul><li>1):  association[关联]</li><li>2):  collection[收集]</li><li>3):  behavior[行为]</li><li>4):  partial[部分]</li><li>5):  eviction[收回]</li><li>6):  FIFO[先入先出]</li><li>7):  interval[无装饰的]</li></ul><h2 id="第三章：Mybatis框架动态SQL"><a href="#第三章：Mybatis框架动态SQL" class="headerlink" title="第三章：Mybatis框架动态SQL"></a>第三章：Mybatis框架动态SQL</h2><ul><li>1):  trim[修剪]</li><li>2):  suffix[后缀]</li><li>3):  prefixOverrides[前缀重写]</li><li>4):  suffixOverrides[后缀重写]</li><li>5):  foreach[循环]</li><li>6):  separator[分离器]</li></ul><h2 id="第一章：反射"><a href="#第一章：反射" class="headerlink" title="第一章：反射"></a>第一章：反射</h2><ul><li>1): reflection  [反射]</li><li>2): constructor  [构造函数]</li><li>3): field  [领域]</li><li>4): method  [方法]</li><li>5): simple  [结构单一]</li><li>6): modifier [修正]</li><li>7): declared  [公开声明]</li><li>8): declaring [说明]</li><li>9): member [成员]</li><li>10): instance [例子]</li><li>11): accessible [可达到的]</li><li>12): illegal  [非法的]</li><li>13): access [入口]</li><li>14): invoke [调用]</li><li>15): array [一系列]</li><li>16): component [构成的]</li><li>17): dimension [大小]</li><li>18): convertor [转化器]</li></ul><h2 id="第二章：XML"><a href="#第二章：XML" class="headerlink" title="第二章：XML"></a>第二章：XML</h2><ul><li>1): extensible [可展开的]</li><li>2): markup  [利润]</li><li>3): document [文档]</li><li>4): processing [处理]</li><li>5): parser  [解析器]</li><li>6): builder [建设者]</li><li>7): node  [节点]</li><li>8): element [元素]</li><li>9): attribute  [属性]</li><li>10): transformer  [变压器]</li><li>11): branch [分支]</li></ul>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> 单词 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>ajax</title>
       <link href="/2022/03/30/ajax/"/>
       <url>/2022/03/30/ajax/</url>
@@ -53,6 +34,25 @@
         <tags>
             
             <tag> AJAX </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>单词总汇</title>
+      <link href="/2022/03/30/dan-ci-zong-hui/"/>
+      <url>/2022/03/30/dan-ci-zong-hui/</url>
+      
+        <content type="html"><![CDATA[<p>#单词总汇</p><h2 id="第一章：初始Mybatis框架"><a href="#第一章：初始Mybatis框架" class="headerlink" title="第一章：初始Mybatis框架"></a>第一章：初始Mybatis框架</h2><ul><li>1):  plain[无装饰的]</li><li>2):  relational[相关的]</li><li>3):  namespace[命名空间]</li><li>4):  configuration[布局]</li><li>5):  mapper[映射]</li><li>6):  builder[建立者]</li><li>7):  environment[生态环境]</li><li>8):  alias[别名]</li></ul><h2 id="第二章：SQL映射文件详解"><a href="#第二章：SQL映射文件详解" class="headerlink" title="第二章：SQL映射文件详解"></a>第二章：SQL映射文件详解</h2><ul><li>1):  association[关联]</li><li>2):  collection[收集]</li><li>3):  behavior[行为]</li><li>4):  partial[部分]</li><li>5):  eviction[收回]</li><li>6):  FIFO[先入先出]</li><li>7):  interval[无装饰的]</li></ul><h2 id="第三章：Mybatis框架动态SQL"><a href="#第三章：Mybatis框架动态SQL" class="headerlink" title="第三章：Mybatis框架动态SQL"></a>第三章：Mybatis框架动态SQL</h2><ul><li>1):  trim[修剪]</li><li>2):  suffix[后缀]</li><li>3):  prefixOverrides[前缀重写]</li><li>4):  suffixOverrides[后缀重写]</li><li>5):  foreach[循环]</li><li>6):  separator[分离器]</li></ul><h2 id="第一章：反射"><a href="#第一章：反射" class="headerlink" title="第一章：反射"></a>第一章：反射</h2><ul><li>1): reflection  [反射]</li><li>2): constructor  [构造函数]</li><li>3): field  [领域]</li><li>4): method  [方法]</li><li>5): simple  [结构单一]</li><li>6): modifier [修正]</li><li>7): declared  [公开声明]</li><li>8): declaring [说明]</li><li>9): member [成员]</li><li>10): instance [例子]</li><li>11): accessible [可达到的]</li><li>12): illegal  [非法的]</li><li>13): access [入口]</li><li>14): invoke [调用]</li><li>15): array [一系列]</li><li>16): component [构成的]</li><li>17): dimension [大小]</li><li>18): convertor [转化器]</li></ul><h2 id="第二章：XML"><a href="#第二章：XML" class="headerlink" title="第二章：XML"></a>第二章：XML</h2><ul><li>1): extensible [可展开的]</li><li>2): markup  [利润]</li><li>3): document [文档]</li><li>4): processing [处理]</li><li>5): parser  [解析器]</li><li>6): builder [建设者]</li><li>7): node  [节点]</li><li>8): element [元素]</li><li>9): attribute  [属性]</li><li>10): transformer  [变压器]</li><li>11): branch [分支]</li></ul>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 单词 </tag>
             
         </tags>
       
