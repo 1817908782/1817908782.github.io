@@ -42,6 +42,25 @@
     
     
     <entry>
+      <title>ajax</title>
+      <link href="/2022/03/30/ajax/"/>
+      <url>/2022/03/30/ajax/</url>
+      
+        <content type="html"><![CDATA[<p>#ajax</p><h2 id="什么是ajax"><a href="#什么是ajax" class="headerlink" title="什么是ajax"></a>什么是ajax</h2><ul><li>JQUery封装了一个函数，称之为$.ajax,通过对象调用ajax()函数，<br>可以异步加载相关的请求。依靠的是javascript提供的一个对象XHP(XmlHttpRequest)<br>,封装了这个对象。</li><li>是客户端（浏览器）与服务器进行异步通信的编程模式,能让浏览器局部刷新变化数据，采用异步方式的工作机制。<br>AJAX异步的js的XML</li><li>AJAX采用异步方式与服务器进行交互，可以实现局部刷新，而无需全网页的刷新，减轻浏览器的压力，增强用户的体验。<h2 id="ajax-的使用方式-需要传递一个方法体作为方法的参数来使用，一对大括号称之为方法体。语法结构："><a href="#ajax-的使用方式-需要传递一个方法体作为方法的参数来使用，一对大括号称之为方法体。语法结构：" class="headerlink" title="ajax()的使用方式 需要传递一个方法体作为方法的参数来使用，一对大括号称之为方法体。语法结构："></a>ajax()的使用方式 需要传递一个方法体作为方法的参数来使用，一对大括号称之为方法体。语法结构：</h2><pre class="line-numbers language-js" data-language="js"><code class="language-js">$<span class="token punctuation">.</span><span class="token function">ajax</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>  <span class="token literal-property property">url</span><span class="token operator">:</span> <span class="token string">""</span><span class="token punctuation">,</span>  <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">""</span><span class="token punctuation">,</span>  <span class="token literal-property property">data</span><span class="token operator">:</span> <span class="token string">""</span><span class="token punctuation">,</span>  <span class="token literal-property property">dataType</span><span class="token operator">:</span> <span class="token string">""</span><span class="token punctuation">,</span>  <span class="token function-variable function">success</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>      <span class="token punctuation">}</span><span class="token punctuation">,</span>  <span class="token function-variable function">error</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>    <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li><li>ajax()函数的参数的含义：</li></ul><table><thead><tr><th>参数</th><th align="right">功能描述</th></tr></thead><tbody><tr><td>url</td><td align="right">表示请求的地址(url地址) 不能包含参数列表部分</td></tr><tr><td>type</td><td align="right">请求的类型(GET和POST请求的类型等…)</td></tr><tr><td>data</td><td align="right">向请求的url地址提交的数据。例如：data:”username=lt&amp;pwd=123456”</td></tr><tr><td>dataType</td><td align="right">提交的数据类型。数据的类型一般指定为json类型</td></tr><tr><td>success</td><td align="right">当服务器正常响应客户端时，会自动调用success参数的方法，并且将服务器的数据返回的数据以参数的形式传递给这个方法的参数上</td></tr><tr><td>error</td><td align="right">当服务器未正常响应客户端时，会自动调用error参数的方法，并且将服务器的数据返回的数据以参数的形式传递给这个方法的参数上</td></tr><tr><td>————————————————</td><td align="right"></td></tr></tbody></table><ul><li>js代码可以独立声明在js的文件里或者声明在script标签中</li></ul>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> AJAX </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Mybatis</title>
       <link href="/2022/03/29/mybatis/"/>
       <url>/2022/03/29/mybatis/</url>

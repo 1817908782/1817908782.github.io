@@ -4,14 +4,11 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="XML, 一夜鱼龙舞">
-    <meta name="description" content="##XML简介
-
-XML 被设计用来传输和存储数据
-HTML 被设计用来显示数据什么是XML？
-XML 指可扩展标记语言（EXtensible Markup Language）。
-XML 是一种很像HTML的标记语言。
-XML 的设计宗旨是">
+    <meta name="keywords" content="ajax, 一夜鱼龙舞">
+    <meta name="description" content="#ajax
+什么是ajax
+JQUery封装了一个函数，称之为$.ajax,通过对象调用ajax()函数，可以异步加载相关的请求。依靠的是javascript提供的一个对象XHP(XmlHttpRequest),封装了这个对象。
+是客户端（">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -23,7 +20,7 @@ XML 的设计宗旨是">
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>XML | 一夜鱼龙舞</title>
+    <title>ajax | 一夜鱼龙舞</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -318,12 +315,12 @@ XML 的设计宗旨是">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">XML</h1>
+                    <h1 class="description center-align post-title">ajax</h1>
                 </div>
             </div>
         </div>
@@ -439,8 +436,8 @@ XML 的设计宗旨是">
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/XML/">
-                                <span class="chip bg-color">XML</span>
+                            <a href="/tags/AJAX/">
+                                <span class="chip bg-color">AJAX</span>
                             </a>
                         
                     </div>
@@ -455,7 +452,7 @@ XML 的设计宗旨是">
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-04-01
+                    2022-03-30
                 </div>
                 
 
@@ -479,43 +476,62 @@ XML 的设计宗旨是">
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>##XML简介</p>
+                <p>#ajax</p>
+<h2 id="什么是ajax"><a href="#什么是ajax" class="headerlink" title="什么是ajax"></a>什么是ajax</h2><ul>
+<li>JQUery封装了一个函数，称之为$.ajax,通过对象调用ajax()函数，<br>可以异步加载相关的请求。依靠的是javascript提供的一个对象XHP(XmlHttpRequest)<br>,封装了这个对象。</li>
+<li>是客户端（浏览器）与服务器进行异步通信的编程模式,能让浏览器局部刷新变化数据，采用异步方式的工作机制。<br>AJAX异步的js的XML</li>
+<li>AJAX采用异步方式与服务器进行交互，可以实现局部刷新，而无需全网页的刷新，减轻浏览器的压力，增强用户的体验。<h2 id="ajax-的使用方式-需要传递一个方法体作为方法的参数来使用，一对大括号称之为方法体。语法结构："><a href="#ajax-的使用方式-需要传递一个方法体作为方法的参数来使用，一对大括号称之为方法体。语法结构：" class="headerlink" title="ajax()的使用方式 需要传递一个方法体作为方法的参数来使用，一对大括号称之为方法体。语法结构："></a>ajax()的使用方式 需要传递一个方法体作为方法的参数来使用，一对大括号称之为方法体。语法结构：</h2><pre class="line-numbers language-js" data-language="js"><code class="language-js">$<span class="token punctuation">.</span><span class="token function">ajax</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">url</span><span class="token operator">:</span> <span class="token string">""</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">""</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">data</span><span class="token operator">:</span> <span class="token string">""</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">dataType</span><span class="token operator">:</span> <span class="token string">""</span><span class="token punctuation">,</span>
+  <span class="token function-variable function">success</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function-variable function">error</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+<li>ajax()函数的参数的含义：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th align="right">功能描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>url</td>
+<td align="right">表示请求的地址(url地址) 不能包含参数列表部分</td>
+</tr>
+<tr>
+<td>type</td>
+<td align="right">请求的类型(GET和POST请求的类型等…)</td>
+</tr>
+<tr>
+<td>data</td>
+<td align="right">向请求的url地址提交的数据。例如：data:”username=lt&amp;pwd=123456”</td>
+</tr>
+<tr>
+<td>dataType</td>
+<td align="right">提交的数据类型。数据的类型一般指定为json类型</td>
+</tr>
+<tr>
+<td>success</td>
+<td align="right">当服务器正常响应客户端时，会自动调用success参数的方法，并且将服务器的数据返回的数据以参数的形式传递给这个方法的参数上</td>
+</tr>
+<tr>
+<td>error</td>
+<td align="right">当服务器未正常响应客户端时，会自动调用error参数的方法，并且将服务器的数据返回的数据以参数的形式传递给这个方法的参数上</td>
+</tr>
+<tr>
+<td>————————————————</td>
+<td align="right"></td>
+</tr>
+</tbody></table>
 <ul>
-<li>XML 被设计用来传输和存储数据</li>
-<li>HTML 被设计用来显示数据<h2 id="什么是XML？"><a href="#什么是XML？" class="headerlink" title="什么是XML？"></a>什么是XML？</h2></li>
-<li>XML 指可扩展标记语言（EXtensible Markup Language）。</li>
-<li>XML 是一种很像HTML的标记语言。</li>
-<li>XML 的设计宗旨是传输数据，而不是显示数据。</li>
-<li>XML 标签没有被预定义。您需要自行定义标签。</li>
-<li>XML 被设计为具有自我描述性。</li>
-<li>XML 是 W3C 的推荐标准。<h2 id="XML不是对HTML的替代"><a href="#XML不是对HTML的替代" class="headerlink" title="XML不是对HTML的替代"></a>XML不是对HTML的替代</h2></li>
-<li>XML是对HTML的补充</li>
-<li>XML 不会替代 HTML，理解这一点很重要在大多数Web 应用程序中，XML用于传输数据，而HTML用于格式化并显示数据。</li>
-<li>对XML最好的描述是：XML是独立于软件和硬件的信息传输工具。</li>
-</ul>
-<h2 id="XML用途"><a href="#XML用途" class="headerlink" title="XML用途"></a>XML用途</h2><ul>
-<li>XML 应用于 Web 开发的许多方面，常用于简化数据的存储和共享。<h2 id="XML把数据从HTML分离"><a href="#XML把数据从HTML分离" class="headerlink" title="XML把数据从HTML分离"></a>XML把数据从HTML分离</h2></li>
-<li>如果您需要在 HTML 文档中显示动态数据，那么每当数据改变时将花费大量的时间来编辑 HTML。<br>通过 XML，数据能够存储在独立的 XML 文件中。这样您就可以专注于使用 HTML/CSS 进行显示和布局，并确保修改底层数据不再需要对 HTML 进行任何的改变。<br>通过使用几行 JavaScript 代码，您就可以读取一个外部 XML 文件，并更新您的网页的数据内容。</li>
-</ul>
-<h2 id="XML简化数据共享"><a href="#XML简化数据共享" class="headerlink" title="XML简化数据共享"></a>XML简化数据共享</h2><ul>
-<li>在真实的世界中，计算机系统和数据使用不兼容的格式来存储数据。<br>  XML 数据以纯文本格式进行存储，因此提供了一种独立于软件和硬件的数据存储方法。<br>  这让创建不同应用程序可以共享的数据变得更加容易。</li>
-</ul>
-<h2 id="XML语法规则"><a href="#XML语法规则" class="headerlink" title="XML语法规则"></a>XML语法规则</h2><ul>
-<li>XML的语法规则很简单且很有逻辑这些规则很容易学习也很容易使用。</li>
-<li>所有的XML元素都必须有一个关闭标签</li>
-<li>XML标签对大小写敏感</li>
-<li>XML必须正确嵌套</li>
-<li>XML属性值必须加引号<br><img src="/2022/04/01/xml/xml.png%22"></li>
-</ul>
-<h2 id="XML文档必须有根元素"><a href="#XML文档必须有根元素" class="headerlink" title="XML文档必须有根元素"></a>XML文档必须有根元素</h2><ul>
-<li>XML 必须包含根元素它是所有其他元素的父元素比如以下实例中root就是根元素：<pre class="line-numbers language-none"><code class="language-none">&lt;root&gt;
-  &lt;child&gt;
-    &lt;subchild&gt;.....&lt;/subchild&gt;
-  &lt;/child&gt;
-&lt;/root&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
-</ul>
-<h2 id="XML声明"><a href="#XML声明" class="headerlink" title="XML声明"></a>XML声明</h2><ul>
-<li>XML 声明文件的可选部分，如果存在需要放在文档的第一行，如下所示：<pre class="line-numbers language-none"><code class="language-none">&lt;?xml version="1.0" encoding="utf-8"?&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+<li>js代码可以独立声明在js的文件里或者声明在script标签中</li>
 </ul>
 
                 
@@ -543,7 +559,7 @@ XML 的设计宗旨是">
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://1817908782.github.io/2022/04/01/xml/">http://1817908782.github.io/2022/04/01/xml/</a>
+                    <a href="http://1817908782.github.io/2022/03/30/ajax/">http://1817908782.github.io/2022/03/30/ajax/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -581,8 +597,8 @@ XML 的设计宗旨是">
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/XML/">
-                                    <span class="chip bg-color">XML</span>
+                                <a href="/tags/AJAX/">
+                                    <span class="chip bg-color">AJAX</span>
                                 </a>
                             
                         </div>
@@ -756,56 +772,9 @@ XML 的设计宗旨是">
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
-            <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
-            <div class="card">
-                <a href="/2022/04/01/xml/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="XML">
-                        
-                        <span class="card-title">XML</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-01
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            一夜鱼龙舞
-                            
-                        </span>
-                    </div>
-                </div>
-
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/XML/">
-                        <span class="chip bg-color">XML</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
         <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
                 <a href="/2022/03/30/dan-ci-zong-hui/">
                     <div class="card-image">
@@ -823,9 +792,9 @@ XML 的设计宗旨是">
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-30
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-03-30
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -839,6 +808,51 @@ XML 的设计宗旨是">
                     
                     <a href="/tags/%E5%8D%95%E8%AF%8D/">
                         <span class="chip bg-color">单词</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/03/29/mybatis/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="Mybatis">
+                        
+                        <span class="card-title">Mybatis</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-29
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            一夜鱼龙舞
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/mybatis/">
+                        <span class="chip bg-color">mybatis</span>
                     </a>
                     
                 </div>
