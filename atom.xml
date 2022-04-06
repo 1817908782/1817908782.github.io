@@ -6,7 +6,7 @@
   <link href="http://1817908782.github.io/atom.xml" rel="self"/>
   
   <link href="http://1817908782.github.io/"/>
-  <updated>2022-04-06T01:17:00.493Z</updated>
+  <updated>2022-04-06T01:22:28.794Z</updated>
   <id>http://1817908782.github.io/</id>
   
   <author>
@@ -21,17 +21,15 @@
     <link href="http://1817908782.github.io/2022/04/06/she-ji-mo-shi/"/>
     <id>http://1817908782.github.io/2022/04/06/she-ji-mo-shi/</id>
     <published>2022-04-05T16:00:00.000Z</published>
-    <updated>2022-04-06T01:17:00.493Z</updated>
+    <updated>2022-04-06T01:22:28.794Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;##设计模式概述&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;设计模式（Design Pattern）是前辈们对代码开发经验的总结，是解决特定问题的一系列套路。它不是语法规定，而是一套用来提高代码可复用性、可维护性、可读性、稳健性以及安全性的解决方案。&lt;/li&gt;
-&lt;li&gt;1995</summary>
+    <summary type="html">&lt;h2 id=&quot;设计模式概述&quot;&gt;&lt;a href=&quot;#设计模式概述&quot; class=&quot;headerlink&quot; title=&quot;设计模式概述&quot;&gt;&lt;/a&gt;设计模式概述&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;设计模式（Design</summary>
         
       
     
