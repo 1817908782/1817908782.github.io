@@ -4,10 +4,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="设计模式, 一夜鱼龙舞">
-    <meta name="description" content="设计模式概述
-设计模式（Design Pattern）是前辈们对代码开发经验的总结，是解决特定问题的一系列套路。它不是语法规定，而是一套用来提高代码可复用性、可维护性、可读性、稳健性以及安全性的解决方案。
-1995 年，GoF（Gang o">
+    <meta name="keywords" content="Redis, 一夜鱼龙舞">
+    <meta name="description" content="Redis概述
+Redis是一款内存高速缓存数据库。是一个key-value存储系统（键值存储系统），支持丰富的数据类型，如：String、list、set、zset、hash。可用于缓存，事件发布或订阅，高速队列等场景。支持网络，提供字符">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -19,7 +18,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>设计模式 | 一夜鱼龙舞</title>
+    <title>Redis | 一夜鱼龙舞</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -314,12 +313,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">设计模式</h1>
+                    <h1 class="description center-align post-title">Redis</h1>
                 </div>
             </div>
         </div>
@@ -435,8 +434,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">
-                                <span class="chip bg-color">设计模式</span>
+                            <a href="/tags/Redis/">
+                                <span class="chip bg-color">Redis</span>
                             </a>
                         
                     </div>
@@ -451,7 +450,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-04-06
+                    2022-04-08
                 </div>
                 
 
@@ -475,47 +474,52 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="设计模式概述"><a href="#设计模式概述" class="headerlink" title="设计模式概述"></a>设计模式概述</h2><ul>
-<li>设计模式（Design Pattern）是前辈们对代码开发经验的总结，是解决特定问题的一系列套路。它不是语法规定，而是一套用来提高代码可复用性、可维护性、可读性、稳健性以及安全性的解决方案。</li>
-<li>1995 年，GoF（Gang of Four，四人组/四人帮）合作出版了《设计模式：可复用面向对象软件的基础》一书，共收录了 23 种设计模式，从此树立了软件设计模式领域的里程碑，人称「GoF设计模式」。<br><img src="/2022/04/06/she-ji-mo-shi/02.jpg"></li>
-<li>这 23 种设计模式的本质是面向对象设计原则的实际运用，是对类的封装性、继承性和多态性，以及类的关联关系和组合关系的充分理解。<h5 id="当然，软件设计模式只是一个引导，在实际的软件开发中，必须根据具体的需求来选择："><a href="#当然，软件设计模式只是一个引导，在实际的软件开发中，必须根据具体的需求来选择：" class="headerlink" title="当然，软件设计模式只是一个引导，在实际的软件开发中，必须根据具体的需求来选择："></a>当然，软件设计模式只是一个引导，在实际的软件开发中，必须根据具体的需求来选择：</h5></li>
-<li>对于简单的程序，可能写一个简单的算法要比引入某种设计模式更加容易；</li>
-<li>但是对于大型项目开发或者框架设计，用设计模式来组织代码显然更好</li>
+                <h2 id="Redis概述"><a href="#Redis概述" class="headerlink" title="Redis概述"></a>Redis概述</h2><ul>
+<li>Redis是一款内存高速缓存数据库。是一个key-value存储系统（键值存储系统），支持丰富的数据类型，如：String、list、set、zset、hash。可用于缓存，事件发布或订阅，高速队列等场景。支持网络，提供字符串，哈希，列表，队列，集合结构直接存取，基于内存，可持久化。</li>
 </ul>
-<h3 id="设计模式的分类"><a href="#设计模式的分类" class="headerlink" title="设计模式的分类"></a>设计模式的分类</h3><h5 id="总体来说设计模式分为三大类："><a href="#总体来说设计模式分为三大类：" class="headerlink" title="总体来说设计模式分为三大类："></a>总体来说设计模式分为三大类：</h5><ul>
-<li>创建型模式，共五种：工厂方法模式、抽象工厂模式、单例模式、建造者模式、原型模式。</li>
-<li>结构型模式，共七种：适配器模式、装饰器模式、代理模式、外观模式、桥接模式、组合模式、享元模式</li>
-<li>行为型模式，共十一种：策略模式、模板方法模式、观察者模式、迭代子模式、责任链模式、命令模式、备忘录模式、状态模式、访问者模式、中介者模式、解释器模式。</li>
-<li>其实还有两类：并发型模式和线程池模式。用一个图片来整体描述一下：<br><img src="/2022/04/06/she-ji-mo-shi/01.jpg"><h3 id="设计模式的六大原则"><a href="#设计模式的六大原则" class="headerlink" title="设计模式的六大原则"></a>设计模式的六大原则</h3><h4 id="总原则：开闭原则（Open-Close-Principle）"><a href="#总原则：开闭原则（Open-Close-Principle）" class="headerlink" title="总原则：开闭原则（Open Close Principle）"></a>总原则：开闭原则（Open Close Principle）</h4><h6 id="开闭原则就是说对扩展开放，对修改关闭。在程序需要进行拓展的时候，不能去修改原有的代码，而是要扩展原有代码，实现一个热插拔的效果。所以一句话概括就是：为了使程序的扩展性好，易于维护和升级。想要达到这样的效果，我们需要使用接口和抽象类等"><a href="#开闭原则就是说对扩展开放，对修改关闭。在程序需要进行拓展的时候，不能去修改原有的代码，而是要扩展原有代码，实现一个热插拔的效果。所以一句话概括就是：为了使程序的扩展性好，易于维护和升级。想要达到这样的效果，我们需要使用接口和抽象类等" class="headerlink" title="开闭原则就是说对扩展开放，对修改关闭。在程序需要进行拓展的时候，不能去修改原有的代码，而是要扩展原有代码，实现一个热插拔的效果。所以一句话概括就是：为了使程序的扩展性好，易于维护和升级。想要达到这样的效果，我们需要使用接口和抽象类等"></a>开闭原则就是说对扩展开放，对修改关闭。在程序需要进行拓展的时候，不能去修改原有的代码，而是要扩展原有代码，实现一个热插拔的效果。所以一句话概括就是：为了使程序的扩展性好，易于维护和升级。想要达到这样的效果，我们需要使用接口和抽象类等</h6><h4 id="1-单一职责原则"><a href="#1-单一职责原则" class="headerlink" title="1.单一职责原则"></a>1.单一职责原则</h4><h6 id="不要存在多于一个导致类变更的原因，也就是说每个类应该实现单一的职责，如若不然，就应该把类拆分"><a href="#不要存在多于一个导致类变更的原因，也就是说每个类应该实现单一的职责，如若不然，就应该把类拆分" class="headerlink" title="不要存在多于一个导致类变更的原因，也就是说每个类应该实现单一的职责，如若不然，就应该把类拆分"></a>不要存在多于一个导致类变更的原因，也就是说每个类应该实现单一的职责，如若不然，就应该把类拆分</h6><h4 id="2-里氏替换原则（Liskov-Substitution-Principle）"><a href="#2-里氏替换原则（Liskov-Substitution-Principle）" class="headerlink" title="2.里氏替换原则（Liskov Substitution Principle）"></a>2.里氏替换原则（Liskov Substitution Principle）</h4><h6 id="里氏代换原则-Liskov-Substitution-Principle-LSP-面向对象设计的基本原则之一。-里氏代换原则中说，任何基类可以出现的地方，子类一定可以出现。-LSP是继承复用的基石，只有当衍生类可以替换掉基类，软件单位的功能不受到影响时，基类才能真正被复用，而衍生类也能够在基类的基础上增加新的行为。里氏代换原则是对“开-闭”原则的补充。实现“开-闭”原则的关键步骤就是抽象化。而基类与子类的继承关系就是抽象化的具体实现，所以里氏代换原则是对实现抽象化的具体步骤的规范。历史替换原则中，子类对父类的方法尽量不要重写和重载。因为父类代表了定义好的结构，通过这个规范的接口与外界交互，子类不应该随便破坏它"><a href="#里氏代换原则-Liskov-Substitution-Principle-LSP-面向对象设计的基本原则之一。-里氏代换原则中说，任何基类可以出现的地方，子类一定可以出现。-LSP是继承复用的基石，只有当衍生类可以替换掉基类，软件单位的功能不受到影响时，基类才能真正被复用，而衍生类也能够在基类的基础上增加新的行为。里氏代换原则是对“开-闭”原则的补充。实现“开-闭”原则的关键步骤就是抽象化。而基类与子类的继承关系就是抽象化的具体实现，所以里氏代换原则是对实现抽象化的具体步骤的规范。历史替换原则中，子类对父类的方法尽量不要重写和重载。因为父类代表了定义好的结构，通过这个规范的接口与外界交互，子类不应该随便破坏它" class="headerlink" title="里氏代换原则(Liskov Substitution Principle LSP)面向对象设计的基本原则之一。 里氏代换原则中说，任何基类可以出现的地方，子类一定可以出现。 LSP是继承复用的基石，只有当衍生类可以替换掉基类，软件单位的功能不受到影响时，基类才能真正被复用，而衍生类也能够在基类的基础上增加新的行为。里氏代换原则是对“开-闭”原则的补充。实现“开-闭”原则的关键步骤就是抽象化。而基类与子类的继承关系就是抽象化的具体实现，所以里氏代换原则是对实现抽象化的具体步骤的规范。历史替换原则中，子类对父类的方法尽量不要重写和重载。因为父类代表了定义好的结构，通过这个规范的接口与外界交互，子类不应该随便破坏它"></a>里氏代换原则(Liskov Substitution Principle LSP)面向对象设计的基本原则之一。 里氏代换原则中说，任何基类可以出现的地方，子类一定可以出现。 LSP是继承复用的基石，只有当衍生类可以替换掉基类，软件单位的功能不受到影响时，基类才能真正被复用，而衍生类也能够在基类的基础上增加新的行为。里氏代换原则是对“开-闭”原则的补充。实现“开-闭”原则的关键步骤就是抽象化。而基类与子类的继承关系就是抽象化的具体实现，所以里氏代换原则是对实现抽象化的具体步骤的规范。历史替换原则中，子类对父类的方法尽量不要重写和重载。因为父类代表了定义好的结构，通过这个规范的接口与外界交互，子类不应该随便破坏它</h6><h4 id="3-Dependence-Inversion-Principle"><a href="#3-Dependence-Inversion-Principle" class="headerlink" title="3.(Dependence Inversion Principle)"></a>3.(Dependence Inversion Principle)</h4><h6 id="这个是开闭原则的基础，具体内容：面向接口编程，依赖于抽象而不依赖于具体。写代码时用到具体类时，不与具体类交互，而与具体类的上层接口交互。"><a href="#这个是开闭原则的基础，具体内容：面向接口编程，依赖于抽象而不依赖于具体。写代码时用到具体类时，不与具体类交互，而与具体类的上层接口交互。" class="headerlink" title="这个是开闭原则的基础，具体内容：面向接口编程，依赖于抽象而不依赖于具体。写代码时用到具体类时，不与具体类交互，而与具体类的上层接口交互。"></a>这个是开闭原则的基础，具体内容：面向接口编程，依赖于抽象而不依赖于具体。写代码时用到具体类时，不与具体类交互，而与具体类的上层接口交互。</h6><h4 id="4-接口隔离原则（Interface-Segregation-Principle）"><a href="#4-接口隔离原则（Interface-Segregation-Principle）" class="headerlink" title="4.接口隔离原则（Interface Segregation Principle）"></a>4.接口隔离原则（Interface Segregation Principle）</h4><h6 id="这个原则的意思是：每个接口中不存在子类用不到却必须实现的方法，如果不然，就要将接口拆分。使用多个隔离的接口，比使用单个接口（多个接口方法集合到一个的接口）要好。"><a href="#这个原则的意思是：每个接口中不存在子类用不到却必须实现的方法，如果不然，就要将接口拆分。使用多个隔离的接口，比使用单个接口（多个接口方法集合到一个的接口）要好。" class="headerlink" title="这个原则的意思是：每个接口中不存在子类用不到却必须实现的方法，如果不然，就要将接口拆分。使用多个隔离的接口，比使用单个接口（多个接口方法集合到一个的接口）要好。"></a>这个原则的意思是：每个接口中不存在子类用不到却必须实现的方法，如果不然，就要将接口拆分。使用多个隔离的接口，比使用单个接口（多个接口方法集合到一个的接口）要好。</h6><h4 id="5-迪米特法则（最少知道原则）（Demeter-Principle）"><a href="#5-迪米特法则（最少知道原则）（Demeter-Principle）" class="headerlink" title="5.迪米特法则（最少知道原则）（Demeter Principle）"></a>5.迪米特法则（最少知道原则）（Demeter Principle）</h4><h6 id="就是说：一个类对自己依赖的类知道的越少越好。也就是说无论被依赖的类多么复杂，都应该将逻辑封装在方法的内部，通过public方法提供给外部。这样当被依赖的类变化时，才能最小的影响该类。最少知道原则的另一个表达方式是：只与直接的朋友通信。类之间只要有耦合关系，就叫朋友关系。耦合分为依赖、关联、聚合、组合等。我们称出现为成员变量、方法参数、方法返回值中的类为直接朋友。局部变量、临时变量则不是直接的朋友。我们要求陌生的类不要作为局部变量出现在类中。"><a href="#就是说：一个类对自己依赖的类知道的越少越好。也就是说无论被依赖的类多么复杂，都应该将逻辑封装在方法的内部，通过public方法提供给外部。这样当被依赖的类变化时，才能最小的影响该类。最少知道原则的另一个表达方式是：只与直接的朋友通信。类之间只要有耦合关系，就叫朋友关系。耦合分为依赖、关联、聚合、组合等。我们称出现为成员变量、方法参数、方法返回值中的类为直接朋友。局部变量、临时变量则不是直接的朋友。我们要求陌生的类不要作为局部变量出现在类中。" class="headerlink" title="就是说：一个类对自己依赖的类知道的越少越好。也就是说无论被依赖的类多么复杂，都应该将逻辑封装在方法的内部，通过public方法提供给外部。这样当被依赖的类变化时，才能最小的影响该类。最少知道原则的另一个表达方式是：只与直接的朋友通信。类之间只要有耦合关系，就叫朋友关系。耦合分为依赖、关联、聚合、组合等。我们称出现为成员变量、方法参数、方法返回值中的类为直接朋友。局部变量、临时变量则不是直接的朋友。我们要求陌生的类不要作为局部变量出现在类中。"></a>就是说：一个类对自己依赖的类知道的越少越好。也就是说无论被依赖的类多么复杂，都应该将逻辑封装在方法的内部，通过public方法提供给外部。这样当被依赖的类变化时，才能最小的影响该类。最少知道原则的另一个表达方式是：只与直接的朋友通信。类之间只要有耦合关系，就叫朋友关系。耦合分为依赖、关联、聚合、组合等。我们称出现为成员变量、方法参数、方法返回值中的类为直接朋友。局部变量、临时变量则不是直接的朋友。我们要求陌生的类不要作为局部变量出现在类中。</h6><h4 id="6-合成复用原则（Composite-Reuse-Principle）"><a href="#6-合成复用原则（Composite-Reuse-Principle）" class="headerlink" title="6.合成复用原则（Composite Reuse Principle）"></a>6.合成复用原则（Composite Reuse Principle）</h4><h6 id="原则是尽量首先使用合成-聚合的方式，而不是使用继承。"><a href="#原则是尽量首先使用合成-聚合的方式，而不是使用继承。" class="headerlink" title="原则是尽量首先使用合成/聚合的方式，而不是使用继承。"></a>原则是尽量首先使用合成/聚合的方式，而不是使用继承。</h6></li>
+<h2 id="redis有什么用？"><a href="#redis有什么用？" class="headerlink" title="redis有什么用？"></a>redis有什么用？</h2><ul>
+<li>redis的作用：获取最新的n个数据；2、获取TOP N的数据；3、设置精准的抢购时间；4、实现计数器；5、去除重复值；6、利用set命令制作反垃圾系统；7、构建队列系统。</li>
 </ul>
-<h3 id="Java的23中设计模式图"><a href="#Java的23中设计模式图" class="headerlink" title="Java的23中设计模式图"></a>Java的23中设计模式图</h3><h5 id="简单工厂一般分为：普通简单工厂、多方法简单工厂、静态方法简单工厂。"><a href="#简单工厂一般分为：普通简单工厂、多方法简单工厂、静态方法简单工厂。" class="headerlink" title="简单工厂一般分为：普通简单工厂、多方法简单工厂、静态方法简单工厂。"></a>简单工厂一般分为：普通简单工厂、多方法简单工厂、静态方法简单工厂。</h5><h5 id="01-简单工厂模式"><a href="#01-简单工厂模式" class="headerlink" title="01.简单工厂模式"></a>01.简单工厂模式</h5><p> 就是建立一个工厂类，对实现了同一接口的一些类进行实例的创建<br><img src="/2022/04/06/she-ji-mo-shi/03.png"></p>
-<h5 id="02-多个方法"><a href="#02-多个方法" class="headerlink" title="02.多个方法"></a>02.多个方法</h5><p>是对普通工厂方法模式的改进，在普通工厂方法模式中，如果传递的字符串出错，则不能正确创建对象，而多个工厂方法模式是提供多个工厂方法，分别创建对象。关系图：<br><img src="/2022/04/06/she-ji-mo-shi/04.jpg"></p>
-<h6 id="1-工厂方法模式（Factory-Method）"><a href="#1-工厂方法模式（Factory-Method）" class="headerlink" title="1.工厂方法模式（Factory Method）"></a>1.工厂方法模式（Factory Method）</h6><p>简单工厂模式有一个问题就是，类的创建依赖工厂类，也就是说，如果想要拓展程序，必须对工厂类进行修改，这违背了闭包原则，所以，从设计角度考虑，有一定的问题，如何解决？就用到工厂方法模式，创建一个工厂接口和创建多个工厂实现类，这样一旦需要增加新的功能，直接增加新的工厂类就可以了，不需要修改之前的代码。<br><img src="/2022/04/06/she-ji-mo-shi/05.jpg"></p>
-<h5 id="2-抽象工厂模式"><a href="#2-抽象工厂模式" class="headerlink" title="2.抽象工厂模式"></a>2.抽象工厂模式</h5><p>工厂方法模式和抽象工厂模式不好分清楚，他们的区别如下：</p>
-<pre class="line-numbers language-none"><code class="language-none">工厂方法模式：
-一个抽象产品类，可以派生出多个具体产品类。   
-一个抽象工厂类，可以派生出多个具体工厂类。   
-每个具体工厂类只能创建一个具体产品类的实例。
-
-抽象工厂模式：
-多个抽象产品类，每个抽象产品类可以派生出多个具体产品类。   
-一个抽象工厂类，可以派生出多个具体工厂类。   
-每个具体工厂类可以创建多个具体产品类的实例，也就是创建的是一个产品线下的多个产品。   
-    
-区别：
-工厂方法模式只有一个抽象产品类，而抽象工厂模式有多个。   
-工厂方法模式的具体工厂类只能创建一个具体产品类的实例，而抽象工厂模式可以创建多个。
-工厂方法创建 "一种" 产品，他的着重点在于"怎么创建"，也就是说如果你开发，你的大量代码很可能围绕着这种产品的构造，初始化这些细节上面。也因为如此，类似的产品之间有很多可以复用的特征，所以会和模版方法相随。 
-
-抽象工厂需要创建一些列产品，着重点在于"创建哪些"产品上，也就是说，如果你开发，你的主要任务是划分不同差异的产品线，并且尽量保持每条产品线接口一致，从而可以从同一个抽象工厂继承。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h5 id="3-单例模式（Singleton）"><a href="#3-单例模式（Singleton）" class="headerlink" title="3.单例模式（Singleton）"></a>3.单例模式（Singleton）</h5><p>单例对象（Singleton）是一种常用的设计模式。在Java应用中，单例对象能保证在一个JVM中，该对象只有一个实例存在。这样的模式有几个好处：</p>
+<p>1.获取最新的n个数据</p>
+<pre class="line-numbers language-text" data-language="text"><code class="language-text">现在你在和讯网黄金频道上班,项目经理让你负责每天在频道首页生成一张数据表,来展示1个月内的国际黄金的开盘和收盘价格.如果
+我们从mysql数据库中按时间排序取出,固然可以.但是你要考虑和讯网的并发量,和你排序时对资源的一个浪费程度.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>这个时候我们选取redis的列表存取,就显得很有必要了,我们知道redis有一种队列(list)的数据结构,同时它还具备先进先出的特性.那这样的话,我去最新的1个月的数据不就信手拈来么.一个lrange命令即可简单地取出你想要的区间的值.</p>
+<p>2.获取 TOP N的数据</p>
 <ul>
-<li>某些类创建比较频繁，对于一些大型的对象，这是一笔很大的系统开销。</li>
-<li>省去了new操作符，降低了系统内存的使用频率，减轻GC压力。</li>
-<li>有些类如交易所的核心交易引擎，控制着交易流程，如果该类可以创建多个的话，系统完全乱了。（比如一个军队出现了多个司令员同时指挥，肯定会乱成一团），所以只有使用单例模式，才能保证核心交易服务器独立控制整个流程。</li>
+<li>接下来的这个例子,看标题,感觉跟第1中应用差不多,其实还是有差别的.应用1我们是利用列表的先进先出的特性,按存取时间来取,接下来我们的这个示例,就是利用有序集合的特性来解决实际问题.<pre class="line-numbers language-text" data-language="text"><code class="language-text">现在你受雇于APPLESTORE,项目经理要求你在商店首页,展示下载量排行前30的APP.<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+这个时候,你若能够想到我们redis学习过程中,给大家讲到的SortedSet有序集合,那就再好不过了.我们只需要将每个APP生成一个唯一的ID,将其作为集合中成员member,下载数目作为成员的score.那么当你将这个score插入到有序集合中时,redis就会按其进行大小排序,自然有个有序的集合就形成了.最终你要取前N或者后N的数据,就在于你自己了.</li>
 </ul>
-<h5 id="4-代理模式（Proxy）"><a href="#4-代理模式（Proxy）" class="headerlink" title="4.代理模式（Proxy）"></a>4.代理模式（Proxy）</h5><p>其实每个模式名称就表明了该模式的作用，代理模式就是多一个代理类出来，替原对象进行一些操作，比如我们在租房子的时候回去找中介，为什么呢？因为你对该地区房屋的信息掌握的不够全面，希望找一个更熟悉的人去帮你做，此处的代理就是这个意思。再如我们有的时候打官司，我们需要请律师，因为律师在法律方面有专长，可以替我们进行操作，表达我们的想法。先来看看关系图：<br><img src="/2022/04/06/she-ji-mo-shi/06.jpg"></p>
+<p>4.轻松实现计数器</p>
+<pre class="line-numbers language-text" data-language="text"><code class="language-text">你目前就职的单位是中央全面深化改革领导小组技术顾问办公室,在过去如果全国人民一起选代表,既浪费人力又浪费财力.现在网络技术
+发展了,习近平组长交代由你牵头开发点赞选人大平台.
+接到这个项目,你是不是很犯难,13亿啊!可能同时集中在某个时间段,点赞,如此大的IO请求.硬盘数据库多少有些力不从心.哎,这个时候
+你要运用上我们的内存数据库系统了,redis中对key的增incre,减decr不正适合你的需求么.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>5.去除重复值</p>
+<ul>
+<li>去除重复值,听起来很熟悉,我们的MySQL不是有unique索引吗?哦,好吧,我要说的是我们redis中的对字符串的set命令更使用.<pre class="line-numbers language-text" data-language="text"><code class="language-text">你现在在下厨房平台,任职技术兼策划.你准备收集天下美食,苦于不知菜名.网络是有魔力的,人名群众的智慧是无穷的.你准备发动全
+国的网友们,为你提供菜名,同时你还不想让大家发出相同菜名.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+看到如此问题,你是否还能想到我们之前在学习redis的字符串类型时,说到的set命令,我们讲默认情况,不给其他参数时,如果我们的key不存在,则创建添加.如果key已经存在,则旧值覆盖新值.既然如此,key值存在,则覆盖.不正是我们需要的模型么?</li>
+</ul>
+<p>6.利用set命令制作反垃圾系统</p>
+<pre class="line-numbers language-text" data-language="text"><code class="language-text">上次你制作的统计菜名系统,领导会上先把你肯定了一番,然后义正言辞地说,小明啊,你这系统不太符合净网行动的要求啊,有些网友把一
+些带有明显淫秽色情的菜名都提交到了系统.还被展示出来投票,这不荒唐吗?<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>吓的你一阵冷汗,这个时候你想到了在XX教育高性能架构班学习的同桌小胖.电话里小胖告诉你,当我们使用set命令对字符串进行操作时,给它一个NX参数,这样的话只有用户提交的key不存在时,才会对key进行操作.你去网上down一个敏感字汇字典,提前set入库,不就可以实现反垃圾了么.听完小胖的指导,紧张的你如释重负.</p>
+<p>7.利用发布订阅的中的SUBSCRIBE和PUBLISH命令构建实时消息推送系统</p>
+<pre class="line-numbers language-text" data-language="text"><code class="language-text">费了老鼻子劲,你终于进入了新浪微博事业部.第二天组长找到正埋头苦干的你.小明,咱们微博也要搞个跟FB一样一样的关注功能,搞大
+V认证,大V一发消息,赶紧推送给关注的那群XX,让XX跟大V赶紧互动起来.以此来提高用户粘性.组长走后,”赶紧,推送”,这两个词在你的耳畔不时地回响.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>你又想到了小胖,小胖电话里告诉你.redis里有subscribe订阅和publish发布功能的.你挂了电话,去自学it网里一搜索,果不其然.一个subscribe可以订阅不同的用户模型,只要对应的模型有publish实现,订阅者即可实时收到,推送的消息.你虽然不是王大锤,但你也万万没想到redis竟然有如此功能</p>
+<p>8.构建队列系统</p>
+<pre class="line-numbers language-text" data-language="text"><code class="language-text">忙完微博的事,正准备收拾东西去挤地铁的你.突然被组长叫住了.
+小明,你虽然完成了微博关注和推送的技术架构.但是这几天又有个新问题出现了.因为FB用不了,微博用户暴增.特别是认证大V的用户越
+来越多,就连门口烤红薯的大爷早上还拽着我说,给他整个大V吧,俺不差钱.老板为了缓解认证方面的压力,已经开始收费认证了,但是还是
+挡不住这群XX.赶上过节饭点,大V们几乎同时发微博,推送服务器有点压力.你把这个问题解决了,再走吧,晚点回去打车公司报销.然后打
+完卡他走了.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>“同时发微博”,”同时推送,服务器压力大”.你从电脑中找到了小胖之前发给你的那本redis自学笔记,笔记上说.我们可以将若干个需要执行的事件加入队列,然后按时间的顺序去逐个逐个的执行.这个时候你又想到了一个提高用户互动性的好办法.我能不能让粉丝数目多的大V的微博优先推送呢?毕竟粉丝基数大,影响大,总能搞出一个大新闻.既然这样,我直接使用有序队列不就行了.把一个个大V的微博推送事件ID存入有序队列,同时依据粉丝数给予权重(或说优先级).不就可以达到我们的需求了么.</p>
+<p>9.缓存</p>
+<ul>
+<li>这一点大家应该很熟悉了,它可以像memcache一样充当缓存数据库.不过的它的数据类型比memcache多的多,应对场景自然要比memcache丰富的多.比较时髦的用法是,用其来缓存会话</li>
+</ul>
 
                 
             </div>
@@ -542,7 +546,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://1817908782.github.io/2022/04/06/she-ji-mo-shi/">http://1817908782.github.io/2022/04/06/she-ji-mo-shi/</a>
+                    <a href="http://1817908782.github.io/2022/04/08/redis/">http://1817908782.github.io/2022/04/08/redis/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -580,8 +584,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">
-                                    <span class="chip bg-color">设计模式</span>
+                                <a href="/tags/Redis/">
+                                    <span class="chip bg-color">Redis</span>
                                 </a>
                             
                         </div>
@@ -755,9 +759,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2022/04/08/redis/">
                     <div class="card-image">
@@ -775,9 +780,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-04-08
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-08
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -786,6 +791,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -804,13 +810,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/04/01/xml/">
+                <a href="/2022/04/06/she-ji-mo-shi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="XML">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="设计模式">
                         
-                        <span class="card-title">XML</span>
+                        <span class="card-title">设计模式</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -821,7 +827,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-01
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-06
                             </span>
                         <span class="publish-author">
                             
@@ -834,8 +840,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/XML/">
-                        <span class="chip bg-color">XML</span>
+                    <a href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">
+                        <span class="chip bg-color">设计模式</span>
                     </a>
                     
                 </div>
