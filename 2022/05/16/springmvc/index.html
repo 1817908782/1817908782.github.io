@@ -4,10 +4,11 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Spring, 一夜鱼龙舞">
-    <meta name="description" content="#Spring是什么? 
-
- Spring是一个轻量级的IoC和AOP容器框架。是为Java应用程序提供基础性服务的一套框架，目的是用于简化企业应用程序的开发，它使得开发者只需要关心业务需求。常见的配置方式有三种：基于XML的配置、基于注解">
+    <meta name="keywords" content="SpringMvc, 一夜鱼龙舞">
+    <meta name="description" content="SpringMVC框架介绍这里对SpringMVC框架进行一个简单的介绍
+springmvc是spring框架的一个模块，springmvc和spring无需通过中间整合层进行整合。
+springmvc是一个基于mvc的web框架。
+spr">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -19,7 +20,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Spring | 一夜鱼龙舞</title>
+    <title>SpringMvc | 一夜鱼龙舞</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -319,7 +320,7 @@
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Spring</h1>
+                    <h1 class="description center-align post-title">SpringMvc</h1>
                 </div>
             </div>
         </div>
@@ -435,8 +436,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Spring/">
-                                <span class="chip bg-color">Spring</span>
+                            <a href="/tags/SpringMvc/">
+                                <span class="chip bg-color">SpringMvc</span>
                             </a>
                         
                     </div>
@@ -451,7 +452,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-04-20
+                    2022-05-16
                 </div>
                 
 
@@ -475,55 +476,123 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>#Spring是什么? </p>
-<ul>
-<li><p> Spring是一个轻量级的IoC和AOP容器框架。是为Java应用程序提供基础性服务的一套框架，目的是用于简化企业应用程序的开发，它使得开发者只需要关心业务需求。常见的配置方式有三种：基于XML的配置、基于注解的配置、基于Java的配置。<br>###主要由以下几个模块组成：</p>
+                <h1 id="SpringMVC框架介绍"><a href="#SpringMVC框架介绍" class="headerlink" title="SpringMVC框架介绍"></a>SpringMVC框架介绍</h1><h2 id="这里对SpringMVC框架进行一个简单的介绍"><a href="#这里对SpringMVC框架进行一个简单的介绍" class="headerlink" title="这里对SpringMVC框架进行一个简单的介绍"></a>这里对SpringMVC框架进行一个简单的介绍</h2><ul>
+<li>springmvc是spring框架的一个模块，springmvc和spring无需通过中间整合层进行整合。</li>
+<li>springmvc是一个基于mvc的web框架。</li>
+<li>springmvc 表现层：方便前后端数据的传输</li>
+<li>Spring MVC 拥有控制器，作用跟Struts类似，接收外部请求，解析参数传给服务层</li>
+<li>MVC是指，C控制层，M模块层，V显示层这样的设计理念，而SSM框架里面SPRING MVC本身就是MVC框架，<br>作用是帮助（某种意义上也可以 理解为约束）我们要按照MVC这样的设计来开发WEB项目，而另外两个框架spring主要是用作IOC,AOP等其他的一些设计原则，至于mybatis是用来方便操作数据库的，所以他们都在MV里面，至于V指的是展示部分，一般是指JSP，freemarks这种前提其实，和SSM就没有太大的关系了</li>
+</ul>
+<h2 id="springmvc项目架构图"><a href="#springmvc项目架构图" class="headerlink" title="springmvc项目架构图"></a>springmvc项目架构图</h2><p><img src="/2022/05/16/springmvc/%E9%A1%B9%E7%9B%AE%E6%9E%B6%E6%9E%84%E5%9B%BE.png" alt="springmvc项目架构图"></p>
+<h2 id="Springmvc架构原理解析"><a href="#Springmvc架构原理解析" class="headerlink" title="Springmvc架构原理解析"></a>Springmvc架构原理解析</h2><ul>
+<li><p>发起请求到前端控制器(DispatcherServlet)</p>
 </li>
-<li><p>Spring Core：核心类库，提供IOC服务；</p>
+<li><p> 前端控制器请求HandlerMapping查找 Handler，可以根据xml配置、注解进行查找</p>
 </li>
-<li><p>Spring Context：提供框架式的Bean访问方式，以及企业级功能（JNDI、定时任务等）；</p>
+<li><p> 处理器映射器HandlerMapping向前端控制器返回Handler</p>
 </li>
-<li><p>Spring AOP：AOP服务；</p>
+<li><p> 前端控制器调用处理器适配器去执行Handler</p>
 </li>
-<li><p>Spring DAO：对JDBC的抽象，简化了数据访问异常的处理；</p>
+<li><p> 处理器适配器去执行Handler</p>
 </li>
-<li><p>Spring ORM：对现有的ORM框架的支持；</p>
+<li><p> Handler执行完成给适配器返回ModelAndView</p>
 </li>
-<li><p>Spring Web：提供了基本的面向Web的综合特性，例如多方文件上传；</p>
+<li><p> 处理器适配器向前端控制器返回ModelAndView，ModelAndView是springmvc框架的一个底层对象，包括 Model和view</p>
 </li>
-<li><p>Spring MVC：提供面向Web应用的Model-View-Controller实现。</p>
+<li><p> 前端控制器请求视图解析器去进行视图解析，根据逻辑视图名解析成真正的视图(jsp)</p>
+</li>
+<li><p> 视图解析器向前端控制器返回View</p>
+</li>
+<li><p> 前端控制器进行视图渲染，视图渲染将模型数据(在ModelAndView对象中)填充到request域</p>
+</li>
+<li><p> 前端控制器向用户响应结果</p>
+<h3 id="组件："><a href="#组件：" class="headerlink" title="组件："></a>组件：</h3></li>
+<li><p>前端控制器DispatcherServlet（不需要程序员开发）<br>作用接收请求，响应结果，相当于转发器，中央处理器。<br>有了DispatcherServlet减少了其它组件之间的耦合度。</p>
+</li>
+<li><p>处理器映射器HandlerMapping(不需要程序员开发)<br>作用：根据请求的url查找Handler</p>
+</li>
+<li><p>处理器适配器HandlerAdapter<br>作用：按照特定规则（HandlerAdapter要求的规则）去执行Handler</p>
+</li>
+<li><p>处理器Handler(需要程序员开发)<br>注意：编写Handler时按照HandlerAdapter的要求去做，这样适配器才可以去正确执行Handler</p>
+</li>
+<li><p>视图解析器View resolver(不需要程序员开发)<br>作用：进行视图解析，根据逻辑视图名解析成真正的视图（view）</p>
+</li>
+<li><p>视图View(需要程序员开发jsp)<br>View是一个接口，实现类支持不同的View类型（jsp、freemarker、pdf…）</p>
 </li>
 </ul>
-<p>###Spring的优点？</p>
-<ul>
-<li><p>spring属于低侵入式设计，代码的污染极低；</p>
-</li>
-<li><p>spring的DI机制将对象之间的依赖关系交由框架处理，减低组件的耦合性；</p>
-</li>
-<li><p>Spring提供了AOP技术，支持将一些通用任务，如安全、事务、日志、权限等进行集中式管理，从而提供更好的复用。</p>
-</li>
-<li><p>spring对于主流的应用框架提供了集成支持。</p>
-</li>
-</ul>
-<h3 id="Spring的AOP理解："><a href="#Spring的AOP理解：" class="headerlink" title="Spring的AOP理解："></a>Spring的AOP理解：</h3><ul>
-<li>AOP，一般称为面向切面，作为面向对象的一种补充，用于将那些与业务无关，但却对多个对象产生影响的公共行为和逻辑，抽取并封装为一个可重用的模块，这个模块被命名为“切面”（Aspect），<br>减少系统中的重复代码，降低了模块间的耦合度，同时提高了系统的可维护性。可用于权限认证、日志、事务处理。</li>
-<li>AOP实现的关键在于代理模式，AOP代理主要分为静态代理和动态代理。静态代理的代表为AspectJ；动态代理则以Spring AOP为代表。<pre class="line-numbers language-text" data-language="text"><code class="language-text">1.AspectJ是静态代理的增强，所谓静态代理，就是AOP框架会在编译阶段生成AOP代理类，因此也称为编译时增强，他会在编译阶段将AspectJ(切面)织入到Java字节码中，运行的时候就是增强之后的AOP对象。
-2.Spring AOP使用的动态代理，所谓的动态代理就是说AOP框架不会去修改字节码，而是每次运行时在内存中临时为方法生成一个AOP对象，这个AOP对象包含了目标对象的全部方法，并且在特定的切点做了增强处理，并回调原对象的方法。
-```       
-      
+<h2 id="mvc基础配置文件："><a href="#mvc基础配置文件：" class="headerlink" title="mvc基础配置文件："></a>mvc基础配置文件：</h2><ul>
+<li><p>web.xml</p>
+<pre class="line-numbers language-xml" data-language="xml"><code class="language-xml"><span class="token comment">&lt;!--configure the setting of springmvcDispatcherServlet and configure the mapping--&gt;</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>servlet</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>servlet-name</span><span class="token punctuation">&gt;</span></span>springmvc<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>servlet-name</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>servlet-class</span><span class="token punctuation">&gt;</span></span>org.springframework.web.servlet.DispatcherServlet<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>servlet-class</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>init-param</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>param-name</span><span class="token punctuation">&gt;</span></span>contextConfigLocation<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>param-name</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>param-value</span><span class="token punctuation">&gt;</span></span>classpath:springmvc-servlet.xml<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>param-value</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>init-param</span><span class="token punctuation">&gt;</span></span>
+        <span class="token comment">&lt;!-- &lt;load-on-startup&gt;1&lt;/load-on-startup&gt; --&gt;</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>servlet</span><span class="token punctuation">&gt;</span></span>
 
-- Spring AOP中的动态代理主要有两种方式，JDK动态代理和CGLIB动态代理：
-```text
-①JDK动态代理只提供接口的代理，不支持类的代理。核心InvocationHandler接口和Proxy类，InvocationHandler 通过invoke()方法反射来调用目标类中的代码，动态地将横切逻辑和业务编织在一起；接着，Proxy利用 InvocationHandler动态创建一个符合某一接口的的实例,  生成目标类的代理对象。
-②如果代理类没有实现 InvocationHandler 接口，那么Spring AOP会选择使用CGLIB来动态代理目标类。CGLIB（Code Generation Library），是一个代码生成的类库，可以在运行时动态的生成指定类的一个子类对象，并覆盖其中特定方法并添加增强代码，从而实现AOP。CGLIB是通过继承的方式做的动态代理，因此如果某个类被标记为final，那么它是无法使用CGLIB做动态代理的。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-</li>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>servlet-mapping</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>servlet-name</span><span class="token punctuation">&gt;</span></span>springmvc<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>servlet-name</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>url-pattern</span><span class="token punctuation">&gt;</span></span>/<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>url-pattern</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>servlet-mapping</span><span class="token punctuation">&gt;</span></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+<li><p>springmvc-servlet.xml</p>
+<pre class="line-numbers language-xml" data-language="xml"><code class="language-xml"><span class="token prolog">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>beans</span> <span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://www.springframework.org/schema/beans<span class="token punctuation">"</span></span>
+    <span class="token attr-name"><span class="token namespace">xmlns:</span>xsi</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://www.w3.org/2001/XMLSchema-instance<span class="token punctuation">"</span></span>
+    <span class="token attr-name"><span class="token namespace">xmlns:</span>context</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://www.springframework.org/schema/context<span class="token punctuation">"</span></span>
+    <span class="token attr-name"><span class="token namespace">xmlns:</span>mvc</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://www.springframework.org/schema/mvc<span class="token punctuation">"</span></span>
+    <span class="token attr-name"><span class="token namespace">xsi:</span>schemaLocation</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.1.xsd
+        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.1.xsd<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>                    
+
+    <span class="token comment">&lt;!-- scan the package and the sub package --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">context:</span>component-scan</span> <span class="token attr-name">base-package</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>test.SpringMVC<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+
+    <span class="token comment">&lt;!-- don't handle the static resource --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">mvc:</span>default-servlet-handler</span> <span class="token punctuation">/&gt;</span></span>
+
+    <span class="token comment">&lt;!-- if you use annotation you must configure following setting --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">mvc:</span>annotation-driven</span> <span class="token punctuation">/&gt;</span></span>
+    
+    <span class="token comment">&lt;!-- configure the InternalResourceViewResolver --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>bean</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>org.springframework.web.servlet.view.InternalResourceViewResolver<span class="token punctuation">"</span></span> 
+            <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>internalResourceViewResolver<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token comment">&lt;!-- 前缀 --&gt;</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>property</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>prefix<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>/WEB-INF/jsp/<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
+        <span class="token comment">&lt;!-- 后缀 --&gt;</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>property</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>suffix<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>.jsp<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>bean</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>beans</span><span class="token punctuation">&gt;</span></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
 </ul>
-<h3 id="Spring的IoC理解："><a href="#Spring的IoC理解：" class="headerlink" title="Spring的IoC理解："></a>Spring的IoC理解：</h3><ul>
-<li>IOC就是控制反转，是指创建对象的控制权的转移，以前创建对象的主动权和时机是由自己把控的，而现在这种权力转移到Spring容器中，并由容器根据配置文件去创建实例和管理各个实例之间的依赖关系，对象与对象之间松散耦合，也利于功能的复用。DI依赖注入，和控制反转是同一个概念的不同角度的描述，即 应用程序在运行时依赖IoC容器来动态注入对象需要的外部资源。</li>
-<li>最直观的表达就是，IOC让对象的创建不用去new了，可以由spring自动生产，使用java的反射机制，根据配置文件在运行时动态的去创建对象以及管理对象，并调用对象的方法的。</li>
-<li>Spring的IOC有三种注入方式 ：构造器注入、setter方法注入、根据注解注入。<pre><code class="text">IoC让相互协作的组件保持松散的耦合，而AOP编程允许你把遍布于应用各层的功能分离出来形成可重用的功能组件。
-</code></pre>
-</li>
+<h2 id="SpringMVC常用注解"><a href="#SpringMVC常用注解" class="headerlink" title="SpringMVC常用注解"></a>SpringMVC常用注解</h2><ul>
+<li>@Controller<br> 　　 负责注册一个bean 到spring 上下文中</li>
+<li>@RequestMapping<br> 　　 注解为控制器指定可以处理哪些 URL 请求</li>
+<li>@RequestBody<br> 　　 该注解用于读取Request请求的body部分数据，使用系统默认配置的HttpMessageConverter进行解析，然后把相应的数据绑定到要返回的对象上 ,再把HttpMessageConverter返回的对象数据绑定到 controller中方法的参数上</li>
+<li>@ResponseBody<br> 　　 该注解用于将Controller的方法返回的对象，通过适当的HttpMessageConverter转换为指定格式后，写入到Response对象的body数据区</li>
+<li>@ModelAttribute 　　　<br> 　　在方法定义上使用 @ModelAttribute 注解：Spring MVC 在调用目标处理方法前，会先逐个调用在方法级上标注了@ModelAttribute 的方法<br> 　　<br> 　　在方法的入参前使用 @ModelAttribute 注解：可以从隐含对象中获取隐含的模型数据中获取对象，再将请求参数 –绑定到对象中，再传入入参将方法入参对象添加到模型中</li>
+<li>@RequestParam　<br> 　　在处理方法入参处使用 @RequestParam 可以把请求参 数传递给请求方法</li>
+<li>@PathVariable<br> 　　绑定 URL 占位符到入参
+ 　</li>
+<li>@ExceptionHandler<br> 　　注解到方法上，出现异常时会执行该方法</li>
+<li>@ControllerAdvice<br> 　　使一个Contoller成为全局的异常处理类，类中用@ExceptionHandler方法注解的方法可以处理所有Controller发生的异常</li>
+</ul>
+<h2 id="SpringMVC详细运行流程图"><a href="#SpringMVC详细运行流程图" class="headerlink" title="SpringMVC详细运行流程图"></a>SpringMVC详细运行流程图</h2><p><img src="/2022/05/16/springmvc/SpringMVC%E8%AF%A6%E7%BB%86%E8%BF%90%E8%A1%8C%E6%B5%81%E7%A8%8B%E5%9B%BE.png" alt="springmvc项目架构图"></p>
+<h2 id="SpringMVC运行原理"><a href="#SpringMVC运行原理" class="headerlink" title="SpringMVC运行原理"></a>SpringMVC运行原理</h2><ul>
+<li>用户发送请求至前端控制器DispatcherServlet</li>
+<li>DispatcherServlet收到请求调用HandlerMapping处理器映射器。</li>
+<li>处理器映射器根据请求url找到具体的处理器，生成处理器对象及处理器拦截器(如果有则生成)一并返回给DispatcherServlet。</li>
+<li>DispatcherServlet通过HandlerAdapter处理器适配器调用处理器</li>
+<li>执行处理器(Controller，也叫后端控制器)。</li>
+<li>Controller执行完成返回ModelAndView</li>
+<li>HandlerAdapter将controller执行结果ModelAndView返回给DispatcherServlet</li>
+<li>DispatcherServlet将ModelAndView传给ViewReslover视图解析器</li>
+<li>ViewReslover解析后返回具体View</li>
+<li>DispatcherServlet对View进行渲染视图（即将模型数据填充至视图中）。</li>
+<li>DispatcherServlet响应用户</li>
 </ul>
 
                 
@@ -551,7 +620,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://1817908782.github.io/2022/04/20/spring/">http://1817908782.github.io/2022/04/20/spring/</a>
+                    <a href="http://1817908782.github.io/2022/05/16/springmvc/">http://1817908782.github.io/2022/05/16/springmvc/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -589,8 +658,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Spring/">
-                                    <span class="chip bg-color">Spring</span>
+                                <a href="/tags/SpringMvc/">
+                                    <span class="chip bg-color">SpringMvc</span>
                                 </a>
                             
                         </div>
@@ -764,9 +833,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2022/05/16/springmvc/">
                     <div class="card-image">
@@ -784,9 +854,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-05-16
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-16
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -795,6 +865,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -813,13 +884,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/04/20/dan-ci-zong-hui/">
+                <a href="/2022/04/20/spring/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="单词总汇">
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="Spring">
                         
-                        <span class="card-title">单词总汇</span>
+                        <span class="card-title">Spring</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -843,8 +914,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%8D%95%E8%AF%8D/">
-                        <span class="chip bg-color">单词</span>
+                    <a href="/tags/Spring/">
+                        <span class="chip bg-color">Spring</span>
                     </a>
                     
                 </div>

@@ -6,7 +6,7 @@
   <link href="http://1817908782.github.io/atom.xml" rel="self"/>
   
   <link href="http://1817908782.github.io/"/>
-  <updated>2022-04-21T06:10:06.100Z</updated>
+  <updated>2022-05-16T08:16:02.831Z</updated>
   <id>http://1817908782.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SpringMvc</title>
+    <link href="http://1817908782.github.io/2022/05/16/springmvc/"/>
+    <id>http://1817908782.github.io/2022/05/16/springmvc/</id>
+    <published>2022-05-15T16:00:00.000Z</published>
+    <updated>2022-05-16T08:16:02.831Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;SpringMVC框架介绍&quot;&gt;&lt;a href=&quot;#SpringMVC框架介绍&quot; class=&quot;headerlink&quot; title=&quot;SpringMVC框架介绍&quot;&gt;&lt;/a&gt;SpringMVC框架介绍&lt;/h1&gt;&lt;h2</summary>
+        
+      
+    
+    
+    
+    
+    <category term="SpringMvc" scheme="http://1817908782.github.io/tags/SpringMvc/"/>
+    
+  </entry>
   
   <entry>
     <title>Spring</title>
