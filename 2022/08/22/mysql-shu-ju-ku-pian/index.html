@@ -4,15 +4,13 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="单词总汇, 一夜鱼龙舞">
-    <meta name="description" content="#单词总汇
-第一章：初始Mybatis框架
-1):  plain[无装饰的]
-2):  relational[相关的]
-3):  namespace[命名空间]
-4):  configuration[布局]
-5):  mapper[映射]
-">
+    <meta name="keywords" content="一夜鱼龙舞">
+    <meta name="description" content="MySQL数据库篇MySql有哪几种数据存储引擎?有什么区别？
+Mysql中通过show ENGINES指令可以看到所以支持的数据库存储引擎。最为常用的就是MyISAM和InnoDB两种。
+
+MyISAM和InnoDB的区别:
+
+存储文件。">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -24,7 +22,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>单词总汇 | 一夜鱼龙舞</title>
+    <title>一夜鱼龙舞</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -319,12 +317,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">单词总汇</h1>
+                    <h1 class="description center-align post-title"></h1>
                 </div>
             </div>
         </div>
@@ -438,13 +436,9 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                    <div class="article-tag">
-                        
-                            <a href="/tags/%E5%8D%95%E8%AF%8D/">
-                                <span class="chip bg-color">单词</span>
-                            </a>
-                        
-                    </div>
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -456,28 +450,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-04-20
+                    2022-08-22
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-04-21
+                    2022-08-22
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    612
+                    2.7k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    9 分
                 </div>
                 
 
@@ -500,152 +494,189 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>#单词总汇</p>
-<h2 id="第一章：初始Mybatis框架"><a href="#第一章：初始Mybatis框架" class="headerlink" title="第一章：初始Mybatis框架"></a>第一章：初始Mybatis框架</h2><ul>
-<li>1):  plain[无装饰的]</li>
-<li>2):  relational[相关的]</li>
-<li>3):  namespace[命名空间]</li>
-<li>4):  configuration[布局]</li>
-<li>5):  mapper[映射]</li>
-<li>6):  builder[建立者]</li>
-<li>7):  environment[生态环境]</li>
-<li>8):  alias[别名]</li>
+                <h1 id="MySQL数据库篇"><a href="#MySQL数据库篇" class="headerlink" title="MySQL数据库篇"></a>MySQL数据库篇</h1><h2 id="MySql有哪几种数据存储引擎-有什么区别？"><a href="#MySql有哪几种数据存储引擎-有什么区别？" class="headerlink" title="MySql有哪几种数据存储引擎?有什么区别？"></a>MySql有哪几种数据存储引擎?有什么区别？</h2><ul>
+<li><p>Mysql中通过show ENGINES指令可以看到所以支持的数据库存储引擎。最为常用的就是MyISAM和InnoDB两种。</p>
+</li>
+<li><p>MyISAM和InnoDB的区别:</p>
+<ul>
+<li><p>存储文件。MyISAM每个表有两个文件。MYD和MYISAM文件。MYD是数据文件。MYI是索引文件。而InnoDB每个表只有一个idb文件。</p>
+</li>
+<li><p>InnoDB支持事务、行级锁、外键。MyISAM不支持事务、不支持外键、只支持表锁</p>
+</li>
+<li><p>InnoDB是聚集索引。MYISAM是非聚集索引</p>
+</li>
 </ul>
-<h2 id="第二章：SQL映射文件详解"><a href="#第二章：SQL映射文件详解" class="headerlink" title="第二章：SQL映射文件详解"></a>第二章：SQL映射文件详解</h2><ul>
-<li>1):  association[关联]</li>
-<li>2):  collection[收集]</li>
-<li>3):  behavior[行为]</li>
-<li>4):  partial[部分]</li>
-<li>5):  eviction[收回]</li>
-<li>6):  FIFO[先入先出]</li>
-<li>7):  interval[无装饰的]</li>
+</li>
 </ul>
-<h2 id="第三章：Mybatis框架动态SQL"><a href="#第三章：Mybatis框架动态SQL" class="headerlink" title="第三章：Mybatis框架动态SQL"></a>第三章：Mybatis框架动态SQL</h2><ul>
-<li>1):  trim[修剪]</li>
-<li>2):  suffix[后缀]</li>
-<li>3):  prefixOverrides[前缀重写]</li>
-<li>4):  suffixOverrides[后缀重写]</li>
-<li>5):  foreach[循环]</li>
-<li>6):  separator[分离器]</li>
+<h2 id="什么是脏读、幻读、不可重复读？要怎么处理？"><a href="#什么是脏读、幻读、不可重复读？要怎么处理？" class="headerlink" title="什么是脏读、幻读、不可重复读？要怎么处理？"></a>什么是脏读、幻读、不可重复读？要怎么处理？</h2><ul>
+<li><p>这些问题都是MySQL进行事务并发控制时经常遇到的问题。</p>
+</li>
+<li><p>脏读：在事务过程中，读到了其他事务未提交的数据。</p>
+</li>
+<li><p>不可重复读：在一个事务过程中，多次查询的结果不一致</p>
+</li>
+<li><p>幻读：在一个事务过程中，用同样的操作查询数据，得到的记录数不相同</p>
+</li>
+<li><p>处理的方式有很多：加锁、事务隔离、MVCC</p>
+<ul>
+<li><p>加锁：</p>
+<ul>
+<li><p>脏读：在修改是加排他锁，直到事务提交才释放。读取时加共享锁，读完释放锁。‘</p>
+</li>
+<li><p>不可重复读：读数据时加共享锁，写数据时加排他锁。</p>
+</li>
+<li><p>幻读：加范围锁。</p>
+</li>
 </ul>
-<h2 id="第一章：反射"><a href="#第一章：反射" class="headerlink" title="第一章：反射"></a>第一章：反射</h2><ul>
-<li>1): reflection  [反射]</li>
-<li>2): constructor  [构造函数]</li>
-<li>3): field  [领域]</li>
-<li>4): method  [方法]</li>
-<li>5): simple  [结构单一]</li>
-<li>6): modifier [修正]</li>
-<li>7): declared  [公开声明]</li>
-<li>8): declaring [说明]</li>
-<li>9): member [成员]</li>
-<li>10): instance [例子]</li>
-<li>11): accessible [可达到的]</li>
-<li>12): illegal  [非法的]</li>
-<li>13): access [入口]</li>
-<li>14): invoke [调用]</li>
-<li>15): array [一系列]</li>
-<li>16): component [构成的]</li>
-<li>17): dimension [大小]</li>
-<li>18): convertor [转化器]</li>
+</li>
 </ul>
-<h2 id="第二章：XML"><a href="#第二章：XML" class="headerlink" title="第二章：XML"></a>第二章：XML</h2><ul>
-<li>1): extensible [可展开的]</li>
-<li>2): markup  [利润]</li>
-<li>3): document [文档]</li>
-<li>4): processing [处理]</li>
-<li>5): parser  [解析器]</li>
-<li>6): builder [建设者]</li>
-<li>7): node  [节点]</li>
-<li>8): element [元素]</li>
-<li>9): attribute  [属性]</li>
-<li>10): transformer  [变压器]</li>
-<li>11): branch [分支]</li>
+</li>
 </ul>
-<h2 id="第三章：设计模式"><a href="#第三章：设计模式" class="headerlink" title="第三章：设计模式"></a>第三章：设计模式</h2><ul>
-<li>1): design [设计]</li>
-<li>2): pattern  [模式]</li>
-<li>3): reusable [可再用的]</li>
-<li>4):4. factory  [工厂]</li>
-<li>5): product [产品]</li>
-<li>6): concrete [具体的]</li>
-<li>7): subject [主题]</li>
-<li>8): real [真实的]</li>
-<li>9): proxy [代表权]</li>
-<li>10): invocation [祈祷]</li>
-<li>11): handler [处理者]</li>
-<li>12): generation [产生]</li>
-<li>13): library [图书馆]</li>
-<li>14): interceptor [拦截器]</li>
-<li>15): intercept [拦截]</li>
-<li>16): enhancer [增强器]</li>
-<li>17): callback [回收]</li>
+<h2 id="事务的基本特性和隔离级别有哪些？"><a href="#事务的基本特性和隔离级别有哪些？" class="headerlink" title="事务的基本特性和隔离级别有哪些？"></a>事务的基本特性和隔离级别有哪些？</h2><ul>
+<li><p>事务：表示多个数据操作组成一个完整的事务单元，这个事务内的所以数据操作要么同时成功，要么同时失败。</p>
+</li>
+<li><p>事务的特性：ACID</p>
+<ul>
+<li>原子性：在一个事务中所以操作要么同时成功，要么同时失败</li>
+<li>一致性：事务无论是成功还是失败，都必须保证事务内操作的一致，要么是操作前的数据，要么是操作后的数据。</li>
+<li>隔离性：在不同事务中操作同一个数据时，为了防止数据损坏，需要事务是互相是不可见的，互相是不受影响的</li>
+<li>持久性：事务开始就不会终止，他的结果不受其他外在的影响，不会导致中途停止导致数据丢失。</li>
 </ul>
-<h2 id="第四章：Redis"><a href="#第四章：Redis" class="headerlink" title="第四章：Redis"></a>第四章：Redis</h2><ul>
-<li>1): cache 缓冲存储器</li>
-<li>2): master-slave 主从</li>
-<li>3): prefix 前缀</li>
-<li>4): install 安装</li>
-<li>5): memory 记忆</li>
-<li>6): dump 倾倒</li>
-<li>7): fork 分叉</li>
-<li>8):  bind 约束</li>
-<li>9): daemonize  守护进程</li>
-<li>10): require 要求</li>
-<li>11): auth 作家</li>
-<li>12): nil  无</li>
-<li>13): pattern 模式</li>
-<li>14):  expire 期满</li>
-<li>15): persist 坚持</li>
-<li>16): quit  离开</li>
-<li>17): verbose 冗长的</li>
-<li>18): borrow 抵押</li>
+</li>
+<li><p>Mysql当中有五种隔离级别</p>
+<ul>
+<li>NINE：不使用事务。</li>
+<li>READ UNCOMMITED(脏读)：允许脏读</li>
+<li>READ COMMITED(不可重复读)：防止脏读，最常见的隔离级别</li>
+<li>REPEATABLE READ(可重复读)：防止脏读和不可重复读，MYSQL默认的</li>
+<li>SERIALIZABLE：事务串行，可以防止脏读、幻读、不可重复读。</li>
 </ul>
-<h2 id="第五章：初始Spring"><a href="#第五章：初始Spring" class="headerlink" title="第五章：初始Spring"></a>第五章：初始Spring</h2><ul>
-<li>1): inversion  倒置</li>
-<li>2): control 控制</li>
-<li>3): injection  注射</li>
-<li>4): aspect-oriented 面向侧面</li>
-<li>5): programming 规划</li>
-<li>6): advice 劝告</li>
-<li>7): aspect 方面</li>
-<li>8): JoinPoint 连接点</li>
-<li>9): alliance 联盟</li>
-<li>10): pointcut 定点</li>
-<li>11): weaving 编排</li>
-<li>12): signature 签名</li>
-<li>13): expression  表现</li>
-<li>14): execution 实行</li>
+</li>
+<li><p>五种隔离级别，级别越高，事务的安全性是更高的，但是，事务的并发性能也就会越低。</p>
+</li>
 </ul>
-<h2 id="第六章：初始Spring"><a href="#第六章：初始Spring" class="headerlink" title="第六章：初始Spring"></a>第六章：初始Spring</h2><ol>
-<li>constructor 构造器</li>
-<li>local      地方的</li>
-<li>proceed 前进</li>
-<li>component  组成部分</li>
-<li>autowire 自动驾驶</li>
-<li>qualifier 合格者</li>
-<li>resource 资源</li>
-<li> annotation 注释</li>
-</ol>
-<h2 id="第七章：Spring深入"><a href="#第七章：Spring深入" class="headerlink" title="第七章：Spring深入"></a>第七章：Spring深入</h2><ol>
-<li>location 位置</li>
-<li>template 模板</li>
-<li>support  支持</li>
-<li>configurer 配置</li>
-<li>transaction 交易</li>
-<li>manager 处理者</li>
-<li>propagation 传播</li>
-<li>isolation 隔离</li>
-<li>mandatory 强制的</li>
-<li>nested 嵌套的</li>
-<li>repeatable 可重复的</li>
-<li>serializable 序列化</li>
-<li>transactional 交易的</li>
-<li>placeholder 占位符</li>
-<li> singleton 单独</li>
-<li> prototype 雏形</li>
-<li>global 全球的</li>
-<li>scope  处理</li>
-</ol>
+<h2 id="MySql锁有哪些？什么是间隙锁？"><a href="#MySql锁有哪些？什么是间隙锁？" class="headerlink" title="MySql锁有哪些？什么是间隙锁？"></a>MySql锁有哪些？什么是间隙锁？</h2><ul>
+<li><p>从锁的粒度来区分</p>
+<ul>
+<li><p>行锁：加锁粒度小，但是加锁资源开销比较大。InnoDB支持</p>
+<ul>
+<li>共享锁：读锁。多个事务可以对同一个数据共享同一把锁。持有所的事务都可以访问数据，但是只能加读锁不能写。</li>
+<li>排他锁：写锁。只有一个事务能够获的排他锁，其他事务都不能获取该行的锁，其他事务不能加读锁也不能加写锁，但是是可以读(select)到的。InnoDB会对update\delete\insert语句自动添加排他锁。</li>
+<li>自增锁：通常是针对MySql当中的自增字段+1。如果有事务回滚这种情况，数据会回滚，但是自增序列不会回滚。</li>
+</ul>
+</li>
+<li><p>表锁：加锁粒度大，加锁资源开销比较小。InnoDB和MyISAM都支持。</p>
+<ul>
+<li>表共享读锁：</li>
+<li>表排他写锁：</li>
+<li>意向锁：是InnoDB自动添加的一种锁，不需要用户干预。</li>
+</ul>
+</li>
+<li><p>全局锁：加锁之后整个数据库实例都处于只读状态。所以的数据变更操作都会被挂起。一般用于全库备份的时候。</p>
+</li>
+<li><p>乐观锁：并不会真正的去锁某行记录，而是通过一个版本号实现的（先去用一下，看版本号对不对，如果不对就是别人在用）</p>
+</li>
+<li><p>悲观锁：行锁、表锁都是悲观锁(不管别人用用不用都加上锁)</p>
+</li>
+</ul>
+</li>
+<li><p>常见的锁算法：</p>
+<ul>
+<li>记录锁：锁一条具体的数据。</li>
+<li>间隙锁：RR隔离级别下会加间隙锁。锁一定的范围，而不是锁具体的记录。是为了防止产生幻读。</li>
+<li>Next-key：间隙锁+右记录锁。</li>
+</ul>
+</li>
+</ul>
+<h2 id="MySql的索引结构是什么样的？聚集索引和非聚集索引又是什么？"><a href="#MySql的索引结构是什么样的？聚集索引和非聚集索引又是什么？" class="headerlink" title="MySql的索引结构是什么样的？聚集索引和非聚集索引又是什么？"></a>MySql的索引结构是什么样的？聚集索引和非聚集索引又是什么？</h2><ul>
+<li><p>B+树：</p>
+<ul>
+<li>非叶子节点不存储数据，只进行数据索引</li>
+<li>所以数据都存储在叶子节点当中</li>
+<li>每个叶子节点都存有相邻叶子节点的指针</li>
+<li>叶子节点按照本身关键字从小到大排序。</li>
+</ul>
+</li>
+<li><p>聚集索引：聚集索引就是数据和索引是在一起的，也是防止回表，但是维护也是更重的</p>
+</li>
+<li><p>MyISAM使用的是非聚集索引，树的子节点的data不是数据的本身，而是数据存放的地址。InnoDB采用的是聚集索引，树的叶子节点上的data是数据的本身。</p>
+</li>
+<li><p>聚簇索引的数据物理存放顺序和索引顺序是一致的，所以一个表当中只能有一个聚簇索引，而非聚簇索引可以有多个。</p>
+</li>
+<li><p>InnoDB中，如果表定义了PK，那PK就是聚簇索引。如果没有PK，就会找第一个非空的unique列作为聚簇索引。否则，InnoDB会创建一个隐藏的row-id作为聚簇索引。</p>
+</li>
+<li><p>MySQL的覆盖索引和回表</p>
+<ul>
+<li>如果只需要在一颗索引树上就可以获取SQL所需要的所有列，就不需要再回表查询，这样查询速度就可以更快。</li>
+<li>实现索引覆盖最简单的方式就是将要查询的字段，全部建立到联合索引当中。</li>
+</ul>
+</li>
+</ul>
+<h2 id="MySql的集群是如何搭建的？读写分离是怎么做的？"><a href="#MySql的集群是如何搭建的？读写分离是怎么做的？" class="headerlink" title="MySql的集群是如何搭建的？读写分离是怎么做的？"></a>MySql的集群是如何搭建的？读写分离是怎么做的？</h2><ul>
+<li><img src="https://img2020.cnblogs.com/blog/2553388/202112/2553388-20211212174931113-397190017.png" alt="主从复制原理" style="zoom:67%;"></li>
+<li><p>Mysql的主从复制中主要有三个线程：master(binlog dump)、slave(I/O thread、SQL thread)，Master一条线程和Slave两条线程</p>
+<ul>
+<li>主节点binlog，主从复制的基础是主库记录数据库的所以变更记录到binlog。binlog是数据库服务器启动的那一刻，保存所以修改数据库结构或内容的一个文件。</li>
+<li>主节点log dump线程，当binlog有变动时，log dump线程读取其内容并发送给从节点</li>
+<li>从节点I/O线程接收binlog内容，并将其写入relay log文件中</li>
+<li>从节点的SQL线程读取relay log文件内容对数据更新进行重放，最终保证主从数据库的一致性。</li>
+</ul>
+</li>
+<li><p>MySQL的主从集群只会将binlog从主节点同步到从节点，而不会反过来同步。由此也就引申了读写分离的问题。因为要保证主从之间的数据一致，写数据的操作只能在主节点完成。</p>
+</li>
+</ul>
+<h2 id="谈谈如何对MySql进行分库分表？多大数据量需要分库分表？分库分表的方式和分片策略有哪些？分库分表后，SQL语句的执行流程是怎样的？"><a href="#谈谈如何对MySql进行分库分表？多大数据量需要分库分表？分库分表的方式和分片策略有哪些？分库分表后，SQL语句的执行流程是怎样的？" class="headerlink" title="谈谈如何对MySql进行分库分表？多大数据量需要分库分表？分库分表的方式和分片策略有哪些？分库分表后，SQL语句的执行流程是怎样的？"></a>谈谈如何对MySql进行分库分表？多大数据量需要分库分表？分库分表的方式和分片策略有哪些？分库分表后，SQL语句的执行流程是怎样的？</h2><ul>
+<li><p>什么是分库分表？就是当表中的数据量过大时，整个查询效率就会降低的很明显。这时为了提升查询效率，就要将一个表中的数据分散到多个数据库的多个表当中。</p>
+</li>
+<li><p>分库分表的方式有垂直分片和水平分片。垂直分片就是从业务角度将不同的表拆分到不同的库中，能够解决数据库文件过大的问题，但是还是不能解决查询效率的问题。水平分片就是从数据角度将一个表中的数据拆分到不同的库或表中，这样可以从根本上解决查询效率低的问题。</p>
+</li>
+<li><p>常用的分片策略：</p>
+<ul>
+<li>取余/取模：优点 均匀存放数据库，缺点 扩展非常麻烦。如果十万条数据按取模划分为2个库的话就是一边五万，假如需要加一个库的话就需要重新划分。</li>
+<li>按范围分片：比较好扩展，数据分布不够均匀</li>
+<li>按时间分片：比较容易将热点的数据区分出来</li>
+<li>按枚举值分片：例如按地区分片</li>
+<li>按照目标字段前缀指定进行分区:自定义业务规则分片</li>
+</ul>
+</li>
+<li><p>水平分片从理论上突破了单机数据量处理的瓶颈，并且扩展相对自由，是分库分表的标准解决方案。</p>
+</li>
+<li><p>阿里提供的开发手册中，建议：一个表数据量超过500万或者数据文件超哥2G，就要考虑分库分表了(设计表之前就要分析3年内的数据时否会达到500万)</p>
+</li>
+<li><p>分库分表最常用的组件：Mycat\ShardingSphere</p>
+</li>
+<li><p>分库分表的问题：跨库查询、跨库排序、分布式事务、公共表、主键重复。。。。</p>
+</li>
+</ul>
+<h2 id="MySql数据库中，什么情况下设置了索引但是无法使用？"><a href="#MySql数据库中，什么情况下设置了索引但是无法使用？" class="headerlink" title="MySql数据库中，什么情况下设置了索引但是无法使用？"></a>MySql数据库中，什么情况下设置了索引但是无法使用？</h2><ul>
+<li>没有符合最左前缀原则</li>
+<li>字段进行了隐式数据类型转换</li>
+<li>走索引没有全表扫描效率高</li>
+</ul>
+<h2 id="B树和B-树的区别，为什么Mysql使用B-树"><a href="#B树和B-树的区别，为什么Mysql使用B-树" class="headerlink" title="B树和B+树的区别，为什么Mysql使用B+树"></a>B树和B+树的区别，为什么Mysql使用B+树</h2><ul>
+<li><p>B树的特点：</p>
+<ul>
+<li>节点排序</li>
+<li>一个节点可以存放多个元素，多个元素也排序了</li>
+</ul>
+</li>
+<li><p>B+树的特点</p>
+<ul>
+<li>拥有B树的特点</li>
+<li>叶子节点之间有指针</li>
+<li>非叶子节点上的元素在叶子节点上都冗余了，也就是叶子节点中存储了所以的元素，并且排好顺序</li>
+</ul>
+</li>
+<li><p>Mysql索引使用的是B+树，因为索引是用来加快查询的，而B+树通过对数据进行排序所以是可以提高查询速度的，然后通过一个节点中可以存储多个元素，从而可以使得B +树的高度不会太高，在Mysq中一个nnocdb页就是一个8+树节点，一个nmnodb页默认16kb，所以一般情况下一颗两层的B+树可以存200万行左右的数据，然后通过利用B+树叶子节点存储了所有数据并且进行了排序，并且叶子节点之间有指针，可以很好的支持全表扫描，范围查找等sQL语句。</p>
+</li>
+</ul>
+<h2 id="Mysql慢查询怎么优化？"><a href="#Mysql慢查询怎么优化？" class="headerlink" title="Mysql慢查询怎么优化？"></a>Mysql慢查询怎么优化？</h2><ul>
+<li>检查是否使用了索引，如果没有使用索引则可以建立一个索引</li>
+<li>检查所利用的索引是否是最优的索引</li>
+<li>检查所查询的字段是否是必须的，是否查询了过多的字段，查出了多余的数据</li>
+<li>检查表中的数据是否过多，是否需要进行分库分表了</li>
+<li>检查数据库实例所在机器的性能配置，是否太低，是否可以适当的增加资源(内存、cpu、带宽)</li>
+</ul>
 
                 
             </div>
@@ -672,7 +703,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://1817908782.github.io/2022/04/20/dan-ci-zong-hui/">http://1817908782.github.io/2022/04/20/dan-ci-zong-hui/</a>
+                    <a href="http://1817908782.github.io/2022/08/22/mysql-shu-ju-ku-pian/">http://1817908782.github.io/2022/08/22/mysql-shu-ju-ku-pian/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -709,11 +740,7 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            
-                                <a href="/tags/%E5%8D%95%E8%AF%8D/">
-                                    <span class="chip bg-color">单词</span>
-                                </a>
-                            
+                            <span class="chip bg-color">无标签</span>
                         </div>
                     
                 </div>
@@ -885,62 +912,18 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2022/04/20/spring/">
+                <a href="/2022/08/22/mysql-shu-ju-ku-pian/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="Spring">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
                         
-                        <span class="card-title">Spring</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-04-20
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            一夜鱼龙舞
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/Spring/">
-                        <span class="chip bg-color">Spring</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2022/04/08/redis/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="Redis">
-                        
-                        <span class="card-title">Redis</span>
+                        <span class="card-title"></span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -951,7 +934,45 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-08
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-08-22
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            一夜鱼龙舞
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/05/16/springmvc/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="SpringMvc">
+                        
+                        <span class="card-title">SpringMvc</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-16
                             </span>
                         <span class="publish-author">
                             
@@ -964,8 +985,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Redis/">
-                        <span class="chip bg-color">Redis</span>
+                    <a href="/tags/SpringMvc/">
+                        <span class="chip bg-color">SpringMvc</span>
                     </a>
                     
                 </div>
