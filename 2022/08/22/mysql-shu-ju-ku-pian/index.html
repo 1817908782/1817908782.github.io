@@ -35,9 +35,9 @@ MyISAM和InnoDB的区别:
 
     <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.1"><link rel="alternate" href="/atom.xml" title="一夜鱼龙舞" type="application/atom+xml">
-
+<meta name="generator" content="Hexo 5.4.1">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="一夜鱼龙舞" type="application/atom+xml">
 </head>
 
 
@@ -771,14 +771,14 @@ MyISAM和InnoDB的区别:
 <h2 id="Redis主从、哨兵、集群架构优缺点比较"><a href="#Redis主从、哨兵、集群架构优缺点比较" class="headerlink" title="Redis主从、哨兵、集群架构优缺点比较"></a>Redis主从、哨兵、集群架构优缺点比较</h2><ul>
 <li><p><strong>主从模式</strong></p>
 <ul>
-<li><img src="/2022/08/22/mysql-shu-ju-ku-pian/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AF%87%5C%E4%B8%BB%E4%BB%8E%E6%A8%A1%E5%BC%8F.png"></li>
+<li><img src="/2022/08/22/mysql-shu-ju-ku-pian/%E4%B8%BB%E4%BB%8E%E6%A8%A1%E5%BC%8F.png"></li>
 </ul>
 </li>
 <li><p>主从模式是一个主节点对外提供服务，从节点的数据与主节点的数据时一致的，当主节点挂掉了之后，从节点会变成主节点，但是这个切换的过程需要运维人员操作</p>
 </li>
 <li><p><strong>哨兵模式</strong></p>
 <ul>
-<li><p><img src="/2022/08/22/mysql-shu-ju-ku-pian/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AF%87%5C%E5%93%A8%E5%85%B5%E6%A8%A1%E5%BC%8F.png"></p>
+<li><p><img src="/2022/08/22/mysql-shu-ju-ku-pian/%E5%93%A8%E5%85%B5%E6%A8%A1%E5%BC%8F.png"></p>
 </li>
 <li><p>在redis3.0以前的版本要实现集群一般是借助哨兵sentinel工具来监控master节点的状态，如果master节点异常，则会做主从切换，将某一台slave作为master，哨兵的配置略微复杂，并且性能和高可用性等各方面表现一般，特别是在主从切换的瞬间存在访问瞬断的情况，而且哨兵模式只有一个主节点对外提供服务，没法支持很高的并发，且单个主节点内存也不宜设置得过大，否则会导致持久化文件过大，影响数据恢复或主从同步的效率</p>
 </li>
@@ -786,7 +786,7 @@ MyISAM和InnoDB的区别:
 </li>
 <li><p><strong>集群模式</strong></p>
 <ul>
-<li><img src="/2022/08/22/mysql-shu-ju-ku-pian/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AF%87%5C%E9%9B%86%E7%BE%A4%E6%A8%A1%E5%BC%8F.png"></li>
+<li><img src="/2022/08/22/mysql-shu-ju-ku-pian/%E9%9B%86%E7%BE%A4%E6%A8%A1%E5%BC%8F.png"></li>
 <li><strong>redis集群是一个由多个主从节点群组成的分布式服务器群，它具有复制、高可用和分片特性。Redis集群不需要sentine哨兵·也能完成节点移除和故障转移的功能。需要将每个节点设置成集群模式，这种集群模式没有中心节点，可水平扩展，据官方文档称可以线性扩展到上万个节点(官方推荐不超过1000个节点)。redis集群的性能和高可用性均优于之前版本的哨兵模式，且集群配置非常简单。</strong></li>
 </ul>
 </li>
